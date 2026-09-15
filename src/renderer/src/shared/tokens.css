@@ -1,0 +1,45 @@
+:root {
+  color-scheme: dark;
+  --vertex-bg: #020611;
+  --vertex-bg-deep: #01030a;
+  --vertex-surface: rgba(7, 16, 34, .94);
+  --vertex-surface-raised: rgba(11, 27, 54, .96);
+  --vertex-surface-glass: rgba(7, 18, 40, .72);
+  --vertex-line: rgba(69, 179, 255, .16);
+  --vertex-line-strong: rgba(91, 202, 255, .34);
+  --vertex-line-hot: rgba(111, 232, 255, .62);
+  --vertex-text: #eaf7ff;
+  --vertex-text-soft: #b8d7e8;
+  --vertex-text-muted: rgba(184, 215, 232, .62);
+  --vertex-cyan: #48d9ff;
+  --vertex-cyan-hot: #79efff;
+  --vertex-blue: #3977ff;
+  --vertex-blue-hot: #6a8dff;
+  --vertex-violet: #8a66ff;
+  --vertex-teal: #34f0c8;
+  --vertex-success: #52f2b8;
+  --vertex-warning: #ffce68;
+  --vertex-danger: #ff6d8d;
+  --vertex-accent: var(--vertex-cyan);
+  --vertex-glow: 0 0 18px rgba(72,217,255,.16), 0 0 42px rgba(57,119,255,.08);
+  --vertex-radius-sm: 8px;
+  --vertex-radius-md: 12px;
+  --vertex-radius-lg: 16px;
+  --vertex-gap: 10px;
+  --vertex-explorer-width: 365px;
+  --vertex-session-min-width: 600px;
+  --vertex-session-priority-width: 600px;
+  --vertex-session-transition: 240ms cubic-bezier(.2,.8,.2,1);
+  font-family: Inter, "Segoe UI Variable", "Segoe UI", "Yu Gothic UI", system-ui, sans-serif;
+  background: var(--vertex-bg);
+  color: var(--vertex-text);
+}
+* { box-sizing: border-box; }
+html, body {
+  width:100%; height:100%; margin:0; overflow:hidden;
+  background:
+    radial-gradient(circle at 52% -24%, rgba(57,119,255,.22), transparent 34%),
+    radial-gradient(circle at 92% 12%, rgba(138,102,255,.10), transparent 28%),
+    linear-gradient(180deg, #030817 0%, #01040b 100%);
+  color:var(--vertex-text);
+}

@@ -1,0 +1,494 @@
+{
+  "schema": "vertex-session-portal/observability-preflight-1",
+  "artifact_id": "vertex-session-portal-observability-core-preflight-000091V5",
+  "root": "G:\\Vertex_Project\\Development\\vertex_session_portal",
+  "mode": "READ_ONLY_SOURCE_AUDIT",
+  "human_ui_change": false,
+  "production_mutation": false,
+  "totals": {
+    "origin": 116,
+    "routing": 104,
+    "evidence": 569,
+    "reconcile": 15,
+    "human_gate": 44,
+    "ray": 2,
+    "sensor": 33,
+    "judge": 14
+  },
+  "samples": {
+    "origin": [
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 206,
+        "text": "const origin = this.captureOrigin(webContents)"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 505,
+        "text": "private captureOrigin(webContents: WebContents): ImmutableVraOrigin | null {"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 35,
+        "text": "type VraOriginVera = 'VERA01' | 'VERA02' | 'VERA03' | 'VERA04' | 'VERA05' | 'UNKNOWN'"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 48,
+        "text": "readonly originVera: VraOriginVera"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 69,
+        "text": "readonly originVera: VraOriginVera"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 110,
+        "text": "origin_vera: VraOriginVera"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 394,
+        "text": "if (card.originVera === 'UNKNOWN' || !card.originSession || !card.originWindow ||"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 395,
+        "text": "card.originWindow !== card.originSession || card.originVera !== this.veraForSession(card.originSession)) {"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 496,
+        "text": "private veraForSession(sessionId: string): VraOriginVera {"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 498,
+        "text": "return match ? `VERA0${match[1]}` as VraOriginVera : 'UNKNOWN'"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 507,
+        "text": "const originVera = this.originVeraFromSession(originSession)"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 508,
+        "text": "if (!originSession || originVera === 'UNKNOWN') return null"
+      }
+    ],
+    "routing": [
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 43,
+        "text": "const VRA_ROUTING_CONTRACT_VERSION = 'vra-routing/1' as const"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 44,
+        "text": "const DEFAULT_RETURN_CHANNEL = 'vertex-session-portal:return-queue' as const"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 105,
+        "text": "return_channel: string"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 568,
+        "text": "return_channel: manifest.returnChannel,"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 703,
+        "text": "return_channel: DEFAULT_RETURN_CHANNEL,"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 738,
+        "text": "return_channel: card.returnChannel,"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 875,
+        "text": "returnChannel: metadata?.return_channel ?? current.returnChannel ?? manifest.returnChannel,"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 957,
+        "text": "returnChannel: metadata.return_channel ?? manifest.returnChannel,"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 988,
+        "text": "returnChannel: DEFAULT_RETURN_CHANNEL,"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1035,
+        "text": "const returnChannel = this.scalar(routing.return_channel)"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1037,
+        "text": "if (!returnChannel) throw new Error('VRA_ROUTING_RETURN_CHANNEL_REQUIRED')"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1130,
+        "text": "return_channel: source.returnChannel,"
+      }
+    ],
+    "evidence": [
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 21,
+        "text": "VraEvidenceDeliveryAckRequest,"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 22,
+        "text": "VraEvidenceDeliveryAckResult,"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 90,
+        "text": "workstationEvidenceState: string | null"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 91,
+        "text": "workstationEvidenceReturnState: string | null"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 95,
+        "text": "evidenceIdentity: string | null"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 96,
+        "text": "evidenceCacheName: string | null"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 131,
+        "text": "workstation_evidence_state?: string | null"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 132,
+        "text": "workstation_evidence_return_state?: string | null"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 136,
+        "text": "evidence_identity?: string | null"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 137,
+        "text": "evidence_cache_name?: string | null"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 179,
+        "text": "evidenceReturnPlane: 'UNKNOWN',"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 277,
+        "text": "* This closes the restart gap where durable Workstation Evidence can advance"
+      }
+    ],
+    "reconcile": [
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 281,
+        "text": "await this.reconcileWorkstation()"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 347,
+        "text": "void this.reconcileWorkstationCard(card.id)"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1554,
+        "text": "const tick = (): void => { void this.reconcileWorkstation() }"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1587,
+        "text": "private async reconcileWorkstation(): Promise<void> {"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1591,
+        "text": "await this.reconcileWorkstationCard(card.id)"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1595,
+        "text": "private async reconcileWorkstationCard(cardId: string): Promise<void> {"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 347,
+        "text": "void this.reconcileWorkstationCard(card.id)"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1591,
+        "text": "await this.reconcileWorkstationCard(card.id)"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1595,
+        "text": "private async reconcileWorkstationCard(cardId: string): Promise<void> {"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1560,
+        "text": "private async probeWorkstationHealth(): Promise<boolean> {"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1588,
+        "text": "if (!(await this.probeWorkstationHealth())) return"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 161,
+        "text": "private readonly workstationInFlight = new Set<string>()"
+      }
+    ],
+    "human_gate": [
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1740,
+        "text": "if (this.optionalString(envelope.required_reexecution_authority) !== 'HUMAN_APPLY') throw new Error('WORKSTATION_EVIDENCE_HUMAN_GATE_MISMATCH')"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1873,
+        "text": "'Re-execution requires a new HUMAN_APPLY approval.'"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 36,
+        "text": "type VraHumanApproval = 'PENDING' | 'APPROVED'"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 85,
+        "text": "humanApproval: VraHumanApproval"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 122,
+        "text": "human_approval: VraHumanApproval"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 314,
+        "text": "card.humanApproval = 'APPROVED'"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 384,
+        "text": "if (card.humanApproval !== 'APPROVED' || card.dispatchPhase !== 'PUBLISHED' || card.status !== 'DISPATCHED') {"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 620,
+        "text": "humanApproval: 'PENDING',"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 755,
+        "text": "human_approval: card.humanApproval,"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 886,
+        "text": "humanApproval:"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 888,
+        "text": "current.humanApproval ??"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 968,
+        "text": "humanApproval: metadata.human_approval ?? 'PENDING',"
+      }
+    ],
+    "ray": [
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1787,
+        "text": "* 000082V5 — Ray Evidence optic-nerve bridge."
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1787,
+        "text": "* 000082V5 — Ray Evidence optic-nerve bridge."
+      }
+    ],
+    "sensor": [
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 164,
+        "text": "private workstationObservedUtc: string | null = null"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 180,
+        "text": "observedUtc: new Date().toISOString(),"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 181,
+        "text": "lastError: 'WORKSTATION_SAFETY_NOT_OBSERVED'"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 269,
+        "text": "workstationObservedUtc: this.workstationObservedUtc,"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 436,
+        "text": "this.workstationObservedUtc = new Date().toISOString()"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 447,
+        "text": "this.workstationObservedUtc = observation.observedUtc"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 455,
+        "text": "this.workstationObservedUtc = observation.observedUtc"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 482,
+        "text": "this.workstationObservedUtc = observation.observedUtc"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1483,
+        "text": "// Same-directory rename is the publication point. Workstation never observes a"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1565,
+        "text": "this.workstationObservedUtc = new Date().toISOString()"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1577,
+        "text": "this.workstationObservedUtc = new Date().toISOString()"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1686,
+        "text": "* observed/poll time is intentionally excluded."
+      }
+    ],
+    "judge": [
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 434,
+        "text": "// An HTTP error still proves loopback reachability; a socket/timeout failure does not."
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1643,
+        "text": "// Safety holds are not permanent registration failures. Preserve the approved VRA"
+      },
+      {
+        "file": "src/main/vra/vra-dispatch-service.ts",
+        "line": 1648,
+        "text": "// its verified compatibility shape for non-safety HTTP failures."
+      },
+      {
+        "file": "src/shared/contracts.ts",
+        "line": 818,
+        "text": "export type VcaCuratorMode = 'PENDING' | 'REEVALUATE'"
+      },
+      {
+        "file": "src/shared/contracts.ts",
+        "line": 867,
+        "text": "failures: string[]"
+      },
+      {
+        "file": "src/renderer/src/components/VeraBrowserSession/VeraBrowserSession.ts",
+        "line": 64,
+        "text": "private failure = ''"
+      },
+      {
+        "file": "src/renderer/src/components/VeraBrowserSession/VeraBrowserSession.ts",
+        "line": 446,
+        "text": "this.failure = ''"
+      },
+      {
+        "file": "src/renderer/src/components/VeraBrowserSession/VeraBrowserSession.ts",
+        "line": 453,
+        "text": "this.failure = ''"
+      },
+      {
+        "file": "src/renderer/src/components/VeraBrowserSession/VeraBrowserSession.ts",
+        "line": 478,
+        "text": "const failure = event as WebviewFailEvent"
+      },
+      {
+        "file": "src/renderer/src/components/VeraBrowserSession/VeraBrowserSession.ts",
+        "line": 480,
+        "text": "this.failure = failure.errorDescription || 'ChatGPT browser failed to load.'"
+      },
+      {
+        "file": "src/renderer/src/components/VeraBrowserSession/VeraBrowserSession.ts",
+        "line": 545,
+        "text": "state.textContent = this.failure"
+      },
+      {
+        "file": "src/renderer/src/components/VeraBrowserSession/VeraBrowserSession.ts",
+        "line": 555,
+        "text": "dot.dataset.state = this.failure"
+      }
+    ]
+  },
+  "checks": {
+    "IMMUTABLE_ORIGIN_BASE": true,
+    "ROUTING_BASE": true,
+    "EVIDENCE_BASE": true,
+    "RECONCILE_BASE": true,
+    "HUMAN_GATE_BASE": true
+  },
+  "proposed_modules": [
+    "observability/contracts.ts",
+    "observability/ray-core.ts",
+    "observability/sensor-core.ts",
+    "observability/judge-core.ts",
+    "observability/impact-core.ts",
+    "observability/guard-core.ts",
+    "observability/black-box.ts",
+    "observability/evidence-intelligence.ts",
+    "observability/observability-coordinator.ts"
+  ],
+  "invariants": [
+    "Ray is READ_ONLY",
+    "No Browser DOM scrape",
+    "Human Gate preserved",
+    "STAGING_FIRST preserved",
+    "Workstation remains execution authority",
+    "Lane allocation authority remains Workstation",
+    "External lane policy remains ANY/PREFER",
+    "No new human-facing observability UI"
+  ]
+}

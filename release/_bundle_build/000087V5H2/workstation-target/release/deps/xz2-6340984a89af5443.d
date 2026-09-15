@@ -1,0 +1,11 @@
+G:\Vertex_Project\Development\vertex_session_portal\release\_bundle_build\000087V5H2\workstation-target\release\deps\xz2-6340984a89af5443.d: C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\lib.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\stream.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\bufread.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\read.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\write.rs
+
+G:\Vertex_Project\Development\vertex_session_portal\release\_bundle_build\000087V5H2\workstation-target\release\deps\libxz2-6340984a89af5443.rlib: C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\lib.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\stream.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\bufread.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\read.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\write.rs
+
+G:\Vertex_Project\Development\vertex_session_portal\release\_bundle_build\000087V5H2\workstation-target\release\deps\libxz2-6340984a89af5443.rmeta: C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\lib.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\stream.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\bufread.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\read.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\write.rs
+
+C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\lib.rs:
+C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\stream.rs:
+C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\bufread.rs:
+C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\read.rs:
+C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\xz2-0.1.7\src\write.rs:

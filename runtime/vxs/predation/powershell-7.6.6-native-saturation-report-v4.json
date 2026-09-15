@@ -1,0 +1,21 @@
+{
+  "schema": "vertex-vxs/native-saturation-report-4",
+  "census_command_count": 1993,
+  "seed_bank_command_count": 1285,
+  "unbanked_command_count_before_recensus": 708,
+  "existing_native_resource_count": 3,
+  "ready_native_count": 272,
+  "discovery_only_count": 572,
+  "ir_mapping_ready_count": 0,
+  "ir_mapping_candidate_count": 172,
+  "research_required_count": 400,
+  "known_surface_units": 847,
+  "resolved_surface_units": 275,
+  "engineering_saturation_ratio": 0.324675,
+  "interpretation": "bounded to discovered/censused surface; not proof of total PowerShell completeness",
+  "hard_stop_conditions": [
+    "no READY_NATIVE and no IR_MAPPING_READY",
+    "all remaining seeds require research or mutation authority",
+    "source census/IR/graph changes invalidate this snapshot"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "vertex-session-portal/workstation-server-runtime-slot-1",
+  "process_model": "SEPARATE_PROCESS",
+  "portal_role": "LAUNCH_AND_OBSERVE",
+  "workstation_role": "EXECUTION_AUTHORITY",
+  "bind": "127.0.0.1:47832",
+  "preferred_executable": "vertex.exe",
+  "fallback_executable": "vertex-workstation.exe",
+  "portal_exit_kills_server": false,
+  "direct_http_apply_verify_rollback": false,
+  "human_gate": "PRESERVED",
+  "notes": [
+    "Release packaging may place the Workstation headless executable in this directory.",
+    "Development mode falls back to the sibling vertex_workstation headless binary/Cargo project.",
+    "Session Portal and Workstation remain different OS processes.",
+    "Portal accepts ONLINE only when runtime and recovery contracts match the current Workstation source."
+  ],
+  "required_runtime_contract": "vertex-workstation/headless-server-1",
+  "required_recovery_contract": "estop-failed-write-recovery-1",
+  "legacy_sibling_binary_launch": false,
+  "development_runtime": "CURRENT_SOURCE_CARGO",
+  "development_cargo_target": "vertex_workstation/runtime/portal-managed-cargo-target"
+}

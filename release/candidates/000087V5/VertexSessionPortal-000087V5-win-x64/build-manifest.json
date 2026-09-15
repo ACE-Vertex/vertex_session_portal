@@ -1,0 +1,33 @@
+{
+  "schema": "vertex-session-portal/official-portable-release-1",
+  "artifact_id": "vertex-session-portal-official-portable-release-000087V5",
+  "project_root": "G:\\Vertex_Project\\Development\\vertex_session_portal",
+  "package_name": "Vertex Session Portal.exe",
+  "candidate_dir": "G:\\Vertex_Project\\Development\\vertex_session_portal\\release\\candidates\\000087V5\\VertexSessionPortal-000087V5-win-x64",
+  "official_dir": "G:\\Vertex_Project\\Development\\vertex_session_portal\\release\\official\\VertexSessionPortal-000087V5-win-x64",
+  "packaged_exe_sha256": "07b043bf9b0a0ac14a82fac0b612b7b7ed13cde727d706d74e41a45278ab51f1",
+  "packaged_exe_size": 246201856,
+  "production_modules": [
+    "better-sqlite3",
+    "node-addon-api"
+  ],
+  "native_modules": [
+    "resources/app/node_modules/better-sqlite3/prebuilds/darwin-arm64.node",
+    "resources/app/node_modules/better-sqlite3/prebuilds/darwin-x64.node",
+    "resources/app/node_modules/better-sqlite3/prebuilds/linux-arm64.node",
+    "resources/app/node_modules/better-sqlite3/prebuilds/linux-x64.node",
+    "resources/app/node_modules/better-sqlite3/prebuilds/linuxmusl-arm64.node",
+    "resources/app/node_modules/better-sqlite3/prebuilds/linuxmusl-x64.node",
+    "resources/app/node_modules/better-sqlite3/prebuilds/win32-arm64.node",
+    "resources/app/node_modules/better-sqlite3/prebuilds/win32-x64.node"
+  ],
+  "source_hashes": {
+    "package.json": "bf4494dbd56a40f0485de4e9f8e7824d1f807895305fdfb13eed698681e9b6d9",
+    "out/main/index.js": "9990640842d3bb2362b100b2489b4849d69ec9d26c80aff4559bfe4d71920916",
+    "out/preload/index.cjs": "b80f09cc9f026c03e0653340eb773407edc3678a71dabe9309161077faf7df61",
+    "out/renderer/assets/index-C39Gisj2.js": "54a5f19ed4d139524656fcf1f5cbb6f4d5d80aa870a0ad3939b450f798842295",
+    "out/renderer/assets/index-Cf19VFTA.css": "c616633d206fbacda5bc187cdabc7f8e80658b10fb54d481a22387946376e6e6",
+    "out/renderer/assets/vertex-session-portal-wordmark-BFMUP2c1.svg": "897637bc3a3f785aa44810c65ddb86020f4855fe8841810a2084e1ed441e962e",
+    "out/renderer/index.html": "3086093fc81661a9408f45fe6fae058b75122393c9341ea09962d7601895ce6a"
+  }
+}

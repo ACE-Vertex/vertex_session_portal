@@ -1,0 +1,34 @@
+{
+  "schema": "vertex-vxs/vra-direct-http-nerve-receipt-1",
+  "artifact_id": "vertex-session-portal-vra-vxs-direct-http-nerve-000089V4",
+  "transport": {
+    "host": "127.0.0.1",
+    "port": 47834,
+    "execute_path": "/v1/execute",
+    "health_path": "/health",
+    "cors_enabled": false
+  },
+  "authority": {
+    "human_gate": "AUTH/FULL",
+    "locked_reject": true,
+    "process_scoped": true,
+    "cryptographic_authentication": false
+  },
+  "routing": {
+    "typed_interface": "executeVeraVxsRequest",
+    "executor": "shared VertexShellService",
+    "second_executor": false
+  },
+  "verification": {
+    "build": true,
+    "locked_reject": true,
+    "full_vxs": true,
+    "full_powershell": true,
+    "relock_reject": true
+  },
+  "sha256": {
+    "owner": "110fbc88013a6b1caca75b9ec4f586a2b47eb86a8b9a4cacdc175dd38614de63",
+    "nerve": "16e0df1bde8e94b0d2400bfef5f7b451abab9fad85f954669cd273596757e4f7",
+    "client": "190f6b4db2f9502351230598b96249d08a2f30bc3bf5733af4a91e510764c65b"
+  }
+}

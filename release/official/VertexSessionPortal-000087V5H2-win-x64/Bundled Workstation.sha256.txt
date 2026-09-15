@@ -1,0 +1,1 @@
+85b96ba0289245fef8e440a95f40e2f397a5b123e8d5b7fe5fa0120cbe2e1e5f  resources/workstation-server/vertex-workstation.exe

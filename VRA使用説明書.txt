@@ -1,0 +1,484 @@
+VERTEX VRA Canonical Contract
+VRA仕様・発行手順書 v1.0
+1. VRAとは
+定義
+
+VRA:
+
+Vertex Request Artifact
+
+ではなく、運用上は
+
+作業依頼伝票
+
+として扱う。
+
+VRAの役割:
+
+VERA
+ ↓
+作業依頼
+ ↓
+Workstation搬送
+
+のみ。
+
+VRAが担当しないもの
+
+VRAへ以下を入れてはいけない。
+
+禁止:
+
+実行判断
+自律制御
+Lane管理
+Evidence管理
+Job Registry管理
+Runtime制御
+AI判断ロジック
+
+理由:
+
+VRAが肥大すると境界が壊れるため。
+
+2. Vertex全体責務分離
+
+正式構造:
+
+              VERA
+               |
+               |
+          VRA(vra/1)
+               |
+               |
+        Session Portal
+               |
+               |
+          Registry
+               |
+               |
+     Vertex Workstation
+               |
+               |
+          Runtime
+               |
+               |
+          Evidence
+               |
+               |
+        Return Queue
+               |
+               |
+             VERA
+各担当
+Component	責務
+VERA	判断・設計
+VRA	搬送伝票
+Session Portal	Capture / Human Gate / Routing
+Registry	Job Identity管理
+Workstation	実行管理
+Runtime	実処理
+Evidence	証跡
+3. VRA Canonical Format
+schema
+
+必須:
+
+{
+ "schema_version":"vra/1"
+}
+
+固定。
+
+禁止:
+
+vra/2
+custom-vra
+vera-vra
+xxx-schema
+4. VRAファイル構造
+
+拡張子:
+
+.vra
+
+内部:
+
+example.vra
+
+├ manifest.json
+│
+└ payload/
+    |
+    ├ scripts/
+    |
+    ├ src/
+    |
+    ├ docs/
+    |
+    └ その他必要ファイル
+5. manifest.json仕様
+
+最低構成:
+
+{
+  "schema_version":"vra/1",
+
+  "artifact_id":"unique",
+
+  "title":"task title",
+
+  "source":{
+    "actor":"VERA04",
+    "model":"GPT-5.6 Sol"
+  },
+
+  "target":{
+    "project_root":"target"
+  },
+
+  "authority":"HUMAN_APPLY",
+
+  "routing":{},
+
+  "operations":[],
+
+  "verification":[]
+}
+6. artifact_id
+
+必ず新規。
+
+例:
+
+vertex-shell-test-000001V4
+
+禁止:
+
+同じartifact_id再利用。
+
+7. Job Identity
+
+routing内:
+
+必須:
+
+job_id
+correlation_id
+
+生成。
+
+例:
+
+job-vera04-test-xxxxxxxx
+8. routing仕様
+
+Canonical:
+
+{
+ "contract_version":"vra-routing/1",
+
+ "job_id":"",
+
+ "origin_vera":"VERA04",
+
+ "origin_session":"vera-04",
+
+ "origin_window":"vera-04",
+
+ "return_channel":
+ "vertex-session-portal:return-queue",
+
+ "project_id":"",
+
+ "project_name":"",
+
+ "correlation_id":"",
+
+ "lane_policy":"ANY"
+}
+9. Lane制御
+
+重要。
+
+Lane Allocation Authority:
+
+Vertex Workstation
+
+VERAは禁止:
+
+lane-01固定
+lane-06予約
+
+など。
+
+使用可能:
+
+ANY
+
+PREFER
+
+のみ。
+
+10. operations仕様
+唯一基本形式
+{
+ "op":"copy",
+
+ "source":
+ "payload/scripts/test.py",
+
+ "destination":
+ "scripts/test.py",
+
+ "sha256":
+ "hash"
+}
+source規則
+
+必ず:
+
+payload/
+
+開始。
+
+正:
+
+payload/scripts/test.py
+
+禁止:
+
+scripts/test.py
+payload\scripts\test.py
+11. 禁止operation
+
+作らない。
+
+禁止:
+
+add_feature
+
+create_system
+
+deploy_logic
+
+add_schema
+
+add_interface
+
+add_observer
+
+理由:
+
+VRAは実装場所ではない。
+
+12. Verification仕様
+
+形式:
+
+[
+ {
+  "program":"python",
+
+  "args":[
+   "scripts/test.py"
+  ]
+ }
+]
+絶対条件
+
+operations:
+
+destination
+
+と
+
+verification:
+
+args
+
+は一致。
+
+例:
+
+copy:
+
+payload/scripts/test.py
+ ↓
+scripts/test.py
+
+verification:
+
+scripts/test.py
+13. TEST VRA
+
+用途:
+
+動作確認
+Smoke test
+E2E確認
+
+設定:
+
+"card_kind":"TEST"
+
+推奨:
+
+disposable
+production変更なし
+exit 0
+verify script
+14. VRA発行手順
+Step 1
+
+目的決定
+
+例:
+
+Vertex Shell Native Dispatch確認
+
+↓
+
+Step 2
+
+artifact_id生成
+
+↓
+
+Step 3
+
+job_id生成
+
+↓
+
+Step 4
+
+payload作成
+
+例:
+
+payload/scripts/
+verify_test.py
+
+↓
+
+Step 5
+
+SHA256計算
+
+↓
+
+Step 6
+
+manifest作成
+
+↓
+
+Step 7
+
+.vra圧縮
+
+完成:
+
+test.vra
+
+↓
+
+Step 8
+
+Session Portalへ渡す
+
+↓
+
+Step 9
+
+Workstation処理
+
+Registry登録
+
+↓
+
+Lane Allocation
+
+↓
+
+Execution
+
+↓
+
+Verify
+
+↓
+
+Evidence
+15. Human Gate
+
+通常:
+
+HUMAN_APPLY
+
+必須。
+
+AUTOの場合でも:
+
+AUTO:
+
+発信権限
+
+であり、
+
+VRA仕様変更権限ではない。
+
+16. VRA発行前チェックリスト
+
+発行前:
+
+□ schema_version=vra/1
+
+□ authority=HUMAN_APPLY
+
+□ artifact_id新規
+
+□ job_id新規
+
+□ correlation_id新規
+
+□ payload/使用
+
+□ operationはcopy
+
+□ verification一致
+
+□ Lane指定なし
+
+□ Evidence責務なし
+
+□ Registry責務なし
+
+□ Runtime責務なし
+FINAL PRINCIPLE
+VRAを賢くするな
+
+賢さは:
+
+Registry
+Workstation
+Runtime
+Evidence
+
+へ置く。
+
+VRAは:
+
+薄い
+単純
+壊れにくい
+交換可能
+
+であること。
+
+Vertex VRA Canonical Contract
+
+vra/1
+
+を今後すべてのVERAで共通利用する。

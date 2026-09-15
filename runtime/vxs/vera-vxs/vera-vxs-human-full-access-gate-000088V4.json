@@ -1,0 +1,40 @@
+{
+  "schema": "vertex-vxs/human-full-access-gate-receipt-1",
+  "artifact_id": "vertex-session-portal-vxs-vera-human-full-access-gate-000088V4",
+  "ui": {
+    "front_button_removed": true,
+    "authority_button": "AUTH",
+    "granted_label": "FULL"
+  },
+  "authority": {
+    "default": "LOCKED",
+    "grant": "HUMAN",
+    "scope": "VERA_FULL_ACCESS",
+    "persistence": "PROCESS",
+    "revoke": "AUTH_BUTTON_OR_PROCESS_EXIT",
+    "vera_self_promotion": false,
+    "cryptographic_authentication": false
+  },
+  "route": {
+    "preload_api": "window.veraVxs.execute",
+    "ipc_channel": "vera-vxs:execute",
+    "executor": "VertexShellService",
+    "second_executor": false
+  },
+  "verification": {
+    "authority_unit_test": true,
+    "npm_build": true,
+    "e2e_locked_before": true,
+    "e2e_vxs_full_access": true,
+    "e2e_powershell_read_full_access": true,
+    "e2e_locked_after_revoke": true,
+    "powershell_backend": "pwsh.exe"
+  },
+  "source_sha256": {
+    "host_bridge": "453c811e95b6cca1d5c4ff59077036f6d22b18b90d129a3fc3ba798648145adb",
+    "vera_vxs_interface": "b89d284063917722041fd9325001837b06ccbdd7763a25c5c877dc4d1654cb30",
+    "ipc_owner": "30c798ba656c038b7a2da049fa2a2cad0a5f1b364ab49bb7ff81525e2c19940f",
+    "preload": "40ca125c217fa2e9a9735036550f4fec95e9104143e9526dfbe735f51207ac73",
+    "authority_module": "f9352c0acf5bd8daf36e9b8fa66ea308a96e6de6e749dc71e8e1efdba1a4b921"
+  }
+}

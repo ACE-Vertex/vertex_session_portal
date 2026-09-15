@@ -1,0 +1,21 @@
+{
+  "schema": "vertex-vxs/native-organ-1",
+  "organ_id": "vxs-native-network-observer",
+  "ordinal": 2,
+  "resource": "NETWORK",
+  "status": "SCAFFOLDED_TEST",
+  "provider_language": "rust",
+  "authority_default": "UNKNOWN",
+  "side_effect_policy": "UNKNOWN",
+  "planned_actions": [],
+  "promotion_decision": "UNKNOWN",
+  "promotion_score": null,
+  "transport": {
+    "current": "cli",
+    "target": "vxn",
+    "vxn_binding_status": "PENDING"
+  },
+  "capability_implementation_status": "PENDING_RESOURCE_ADAPTER",
+  "entrypoint": "src/main.rs",
+  "selection_snapshot": "G:\\Vertex_Project\\Development\\vertex_session_portal\\runtime\\vxs\\predation\\second-organ\\selection-000081V4.json"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "vertex-vxs/native-organ-1",
+  "organ_id": "vxs-native-observer",
+  "status": "MATERIALIZED_TEST",
+  "provider_language": "rust",
+  "transport": {
+    "current": "cli",
+    "target": "vxn",
+    "vxn_binding_status": "PENDING"
+  },
+  "authority_default": "AUTO_SAFE",
+  "side_effect_policy": "NONE_ONLY",
+  "resources": [
+    "FILESYSTEM",
+    "SYSTEM"
+  ],
+  "actions": [
+    "OBSERVE",
+    "TEST",
+    "FIND",
+    "MEASURE"
+  ],
+  "source_plan": {
+    "path": "G:\\Vertex_Project\\Development\\vertex_session_portal\\runtime\\vxs\\predation\\powershell-7.6.6-native-promotion-plan.json",
+    "sha256": "dcb86a874eb62ff27d9712f041c110f51e02c2075039f6f28e453d4b85887ed1"
+  },
+  "promotion_plan_matches": [],
+  "entrypoint": "src/main.rs"
+}

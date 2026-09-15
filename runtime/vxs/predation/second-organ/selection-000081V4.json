@@ -1,0 +1,20 @@
+{
+  "schema": "vertex-vxs/second-organ-selection-1",
+  "source_plan": "G:\\Vertex_Project\\Development\\vertex_session_portal\\runtime\\vxs\\predation\\powershell-7.6.6-native-promotion-plan.json",
+  "source_plan_sha256": "dcb86a874eb62ff27d9712f041c110f51e02c2075039f6f28e453d4b85887ed1",
+  "algorithm": "same-as-reattack-ray-000080V4",
+  "already_native": [
+    "FILESYSTEM",
+    "SYSTEM"
+  ],
+  "eligible_count": 1,
+  "selected": {
+    "index": 0,
+    "resource": "NETWORK",
+    "decision": "UNKNOWN",
+    "score": null,
+    "actions": [],
+    "authority": "UNKNOWN",
+    "side_effect": "UNKNOWN"
+  }
+}

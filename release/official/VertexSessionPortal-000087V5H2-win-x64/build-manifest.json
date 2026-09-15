@@ -1,0 +1,24 @@
+{
+  "schema": "vertex-session-portal/self-contained-official-release-1",
+  "artifact_id": "vertex-session-portal-self-contained-bundled-workstation-000087V5H2",
+  "portal_launcher": "Vertex Session Portal.exe",
+  "portal_runtime": "Vertex Session Portal.runtime.exe",
+  "bundled_workstation": "resources/workstation-server/vertex-workstation.exe",
+  "workstation_bind": "127.0.0.1:47832",
+  "portal_launcher_sha256": "126162c25cdc9d6641ffce943583ddf7152edb5681767909f113690c341ac2bf",
+  "portal_runtime_sha256": "07b043bf9b0a0ac14a82fac0b612b7b7ed13cde727d706d74e41a45278ab51f1",
+  "bundled_workstation_sha256": "85b96ba0289245fef8e440a95f40e2f397a5b123e8d5b7fe5fa0120cbe2e1e5f",
+  "production_native_modules": [
+    "resources\\app\\node_modules\\better-sqlite3\\prebuilds\\darwin-arm64.node",
+    "resources\\app\\node_modules\\better-sqlite3\\prebuilds\\darwin-x64.node",
+    "resources\\app\\node_modules\\better-sqlite3\\prebuilds\\linux-arm64.node",
+    "resources\\app\\node_modules\\better-sqlite3\\prebuilds\\linux-x64.node",
+    "resources\\app\\node_modules\\better-sqlite3\\prebuilds\\linuxmusl-arm64.node",
+    "resources\\app\\node_modules\\better-sqlite3\\prebuilds\\linuxmusl-x64.node",
+    "resources\\app\\node_modules\\better-sqlite3\\prebuilds\\win32-arm64.node",
+    "resources\\app\\node_modules\\better-sqlite3\\prebuilds\\win32-x64.node"
+  ],
+  "startup_contract": "Portal launcher starts bundled Workstation only when 127.0.0.1:47832 is not already listening.",
+  "human_gate": true,
+  "lane_allocation_authority": "Workstation"
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "vertex-vxs/human-full-access-e2e-receipt-1",
+  "origin": "VERA04/vera-04/vera-04",
+  "preload_api": "window.veraVxs.execute",
+  "ipc_channel": "vera-vxs:execute",
+  "locked_before": true,
+  "full_vxs_exit_code": 0,
+  "full_vxs_backend": "VXS_META",
+  "full_powershell_exit_code": 0,
+  "full_powershell_backend": "pwsh.exe",
+  "locked_after_revoke": true,
+  "process_scoped_authority": true,
+  "human_grant_simulated_in_test": true
+}

@@ -1,0 +1,6 @@
+VERTEX SESSION PORTAL SELF-CONTAINED OFFICIAL RELEASE
+ARTIFACT=000087V5H2
+DIRECTORY=G:\Vertex_Project\Development\vertex_session_portal\release\official\VertexSessionPortal-000087V5H2-win-x64
+EXE=G:\Vertex_Project\Development\vertex_session_portal\release\official\VertexSessionPortal-000087V5H2-win-x64\Vertex Session Portal.exe
+WORKSTATION=G:\Vertex_Project\Development\vertex_session_portal\release\official\VertexSessionPortal-000087V5H2-win-x64\resources\workstation-server\vertex-workstation.exe
+WORKSTATION_BIND=127.0.0.1:47832

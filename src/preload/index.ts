@@ -1,0 +1,397 @@
+import {
+  contextBridge,
+  ipcRenderer
+} from 'electron'
+import type {
+  AiLaneId,
+  AiLaneSettingsState,
+  AppendSessionMessageRequest,
+  CreateVirtualArdHandoffRequest,
+  PortalBootstrapState,
+  PortalWindowFitRequest,
+  PortalWindowFitResult,
+  ProjectTreeListing,
+  ProjectVirtualArdRequest,
+  ListAiLaneModelsRequest,
+  ProviderSettingsState,
+  RetrievalHit,
+  SaveAiLaneSettingsRequest,
+  SaveProviderSettingsRequest,
+  StorageStatus,
+  SessionAgentRequest,
+  SessionAgentTurn,
+  SessionChatMessage,
+  SessionMessage,
+  SessionProviderStatus,
+  SidebarTab,
+  VertexPortalApi,
+  UpsertVcrEntryRequest,
+  AppendVcaMemoryEventRequest,
+  AppendVcaWeightRevisionRequest,
+  RunVcaCuratorRequest,
+  SaveVcaCuratorSettingsRequest,
+  VcaCompensationPacket,
+  VcaCuratorRunResult,
+  VcaCuratorState,
+  VcaMemoryClockState,
+  VcaRecord,
+  VcaInboxEnqueueResult,
+  VcaInboxState,
+  EnqueueVcaInboxRequest,
+  UpdateVeraSessionThreadRequest,
+  VeraSessionThreadBinding,
+  RegisterVraWebviewSourceRequest,
+  VraDispatchCard,
+  VraDispatchState,
+  VraEvidenceDeliveryAckRequest,
+  VraEvidenceDeliveryAckResult,
+  WorkstationSafetyActionRequest,
+  WorkstationSafetyActionResult,
+  WorkstationSafetyObservation,
+  WorkstationServerProcessState,
+  VcrEntry,
+  VirtualArdHandoff,
+  VirtualArdState
+} from '../shared/contracts'
+
+const api: VertexPortalApi = {
+  submitFirmwareChangeDecision: (detail: unknown) =>
+    ipcRenderer.invoke('firmware:submit-change-decision', detail),
+  bootstrap:
+    (): Promise<PortalBootstrapState> =>
+      ipcRenderer.invoke(
+        'workstation:bootstrap'
+      ),
+
+  setPrioritySession:
+    (
+      sessionId: string
+    ): Promise<PortalBootstrapState> =>
+      ipcRenderer.invoke(
+        'workstation:set-priority-session',
+        sessionId
+      ),
+
+  activateNextMainLane:
+    (): Promise<PortalBootstrapState> =>
+      ipcRenderer.invoke(
+        'workstation:activate-next-main-lane'
+      ),
+
+  setSidebarTab:
+    (
+      tab: SidebarTab
+    ): Promise<void> =>
+      ipcRenderer.invoke(
+        'workstation:set-sidebar-tab',
+        tab
+      ),
+
+  fitMainWindow:
+    (
+      request: PortalWindowFitRequest
+    ): Promise<PortalWindowFitResult> =>
+      ipcRenderer.invoke(
+        'portal:main-window-fit',
+        request
+      ),
+
+  listProjectTree:
+    (path?: string): Promise<ProjectTreeListing> =>
+      ipcRenderer.invoke('project-tree:list', path),
+
+  resolveProjectTreePath:
+    (path: string): Promise<string> =>
+      ipcRenderer.invoke('project-tree:resolve', path),
+
+  openProjectTreePath:
+    (path: string): Promise<void> =>
+      ipcRenderer.invoke('project-tree:open', path),
+
+  revealProjectTreePath:
+    (path: string): Promise<void> =>
+      ipcRenderer.invoke('project-tree:reveal', path),
+
+  copyProjectTreePath:
+    (path: string): Promise<void> =>
+      ipcRenderer.invoke('project-tree:copy-path', path),
+
+  projectVirtualArd:
+    (
+      request:
+        ProjectVirtualArdRequest
+    ): Promise<VirtualArdState> =>
+      ipcRenderer.invoke(
+        'workstation:project-virtual-ard',
+        request
+      ),
+
+  appendSessionMessage:
+    (
+      request:
+        AppendSessionMessageRequest
+    ): Promise<SessionMessage> =>
+      ipcRenderer.invoke(
+        'workstation:append-session-message',
+        request
+      ),
+
+  createVirtualArdHandoff:
+    (
+      request:
+        CreateVirtualArdHandoffRequest
+    ): Promise<VirtualArdHandoff> =>
+      ipcRenderer.invoke(
+        'workstation:create-virtual-ard-handoff',
+        request
+      ),
+
+  getVirtualArdState:
+    (
+      missionId?: string
+    ): Promise<VirtualArdState | null> =>
+      ipcRenderer.invoke(
+        'workstation:get-virtual-ard-state',
+        missionId
+      ),
+
+  sessionProviderStatus:
+    (): Promise<SessionProviderStatus> =>
+      ipcRenderer.invoke(
+        'session-agent:provider-status'
+      ),
+
+  getSessionConversation:
+    (
+      sessionId: string
+    ): Promise<SessionChatMessage[]> =>
+      ipcRenderer.invoke(
+        'session-agent:conversation',
+        sessionId
+      ),
+
+  getSessionRetrieval:
+    (
+      sessionId: string
+    ): Promise<RetrievalHit[]> =>
+      ipcRenderer.invoke(
+        'session-agent:retrieval',
+        sessionId
+      ),
+
+
+sendSessionMessage:
+  (
+    request:
+      SessionAgentRequest
+  ): Promise<SessionAgentTurn> =>
+    ipcRenderer.invoke(
+      'session-agent:send',
+      request
+    ),
+
+getProviderSettings:
+  (): Promise<ProviderSettingsState> =>
+    ipcRenderer.invoke('session-agent:provider-settings'),
+
+saveProviderSettings:
+  (request: SaveProviderSettingsRequest): Promise<ProviderSettingsState> =>
+    ipcRenderer.invoke('session-agent:save-provider-settings', request),
+
+clearProviderApiKey:
+  (): Promise<ProviderSettingsState> =>
+    ipcRenderer.invoke('session-agent:clear-provider-api-key'),
+
+getAiLaneSettings:
+  (): Promise<AiLaneSettingsState> =>
+    ipcRenderer.invoke('session-agent:ai-lane-settings'),
+
+saveAiLaneSettings:
+  (request: SaveAiLaneSettingsRequest): Promise<AiLaneSettingsState> =>
+    ipcRenderer.invoke('session-agent:save-ai-lane-settings', request),
+
+clearAiLaneApiKey:
+  (laneId: AiLaneId): Promise<AiLaneSettingsState> =>
+    ipcRenderer.invoke('session-agent:clear-ai-lane-api-key', laneId),
+
+browseLocalLlm:
+  (): Promise<string | null> =>
+    ipcRenderer.invoke('session-agent:browse-local-llm'),
+
+browseSessionContextFile:
+  (): Promise<import('../shared/contracts').SessionContextAttachment | null> =>
+    ipcRenderer.invoke('session-agent:browse-session-context-file'),
+
+listAiLaneModels:
+  (request: ListAiLaneModelsRequest): Promise<string[]> =>
+    ipcRenderer.invoke('session-agent:list-ai-lane-models', request),
+
+storageStatus:
+  (): Promise<StorageStatus> =>
+    ipcRenderer.invoke('workstation:storage-status'),
+
+searchVcr:
+  (query?: string): Promise<VcrEntry[]> =>
+    ipcRenderer.invoke('workstation:vcr-search', query),
+
+upsertVcrEntry:
+  (request: UpsertVcrEntryRequest): Promise<VcrEntry> =>
+    ipcRenderer.invoke('workstation:vcr-upsert', request),
+
+searchVca:
+  (query?: string): Promise<VcaRecord[]> =>
+    ipcRenderer.invoke('workstation:vca-search', query),
+
+appendVcaMemoryEvent:
+  (request: AppendVcaMemoryEventRequest): Promise<VcaRecord> =>
+    ipcRenderer.invoke('workstation:vca-memory-append', request),
+
+appendVcaWeightRevision:
+  (request: AppendVcaWeightRevisionRequest): Promise<VcaRecord> =>
+    ipcRenderer.invoke('workstation:vca-weight-append', request),
+
+getVcaMemoryClockState:
+  (): Promise<VcaMemoryClockState> =>
+    ipcRenderer.invoke('workstation:vca-memory-clock'),
+
+getVcaCompensation:
+  (sessionId: string, limit?: number): Promise<VcaCompensationPacket> =>
+    ipcRenderer.invoke('workstation:vca-compensation', sessionId, limit),
+
+acknowledgeVcaCompensation:
+  (sessionId: string, throughRevision: number): Promise<VcaMemoryClockState> =>
+    ipcRenderer.invoke('workstation:vca-compensation-ack', sessionId, throughRevision),
+
+getVcaCuratorState:
+  (): Promise<VcaCuratorState> =>
+    ipcRenderer.invoke('workstation:vca-curator-state'),
+
+saveVcaCuratorSettings:
+  (request: SaveVcaCuratorSettingsRequest): Promise<VcaCuratorState> =>
+    ipcRenderer.invoke('workstation:vca-curator-save-settings', request),
+
+runVcaCurator:
+  (request?: RunVcaCuratorRequest): Promise<VcaCuratorRunResult> =>
+    ipcRenderer.invoke('workstation:vca-curator-run', request),
+
+
+getVeraSessionThreadBindings:
+  (): Promise<VeraSessionThreadBinding[]> =>
+    ipcRenderer.invoke('workstation:vera-thread-bindings'),
+
+updateVeraSessionThread:
+  (request: UpdateVeraSessionThreadRequest): Promise<VeraSessionThreadBinding> =>
+    ipcRenderer.invoke('workstation:vera-thread-update', request),
+
+getVcaInbox:
+  (): Promise<VcaInboxState> =>
+    ipcRenderer.invoke('workstation:vca-inbox'),
+
+enqueueVcaInbox:
+  (request: EnqueueVcaInboxRequest): Promise<VcaInboxEnqueueResult> =>
+    ipcRenderer.invoke('workstation:vca-inbox-enqueue', request),
+
+getVraDispatchState:
+  (): Promise<VraDispatchState> =>
+    ipcRenderer.invoke('workstation:vra-dispatch-state'),
+
+registerVraWebviewSource:
+  (request: RegisterVraWebviewSourceRequest): Promise<void> =>
+    ipcRenderer.invoke('workstation:vra-register-webview-source', request),
+
+exportVraCard:
+  (cardId: string): Promise<string> =>
+    ipcRenderer.invoke('workstation:vra-export-card', cardId),
+
+dispatchVraCard:
+  (cardId: string): Promise<VraDispatchCard> =>
+    ipcRenderer.invoke('workstation:vra-dispatch-card', cardId),
+
+removeVraCard:
+  (cardId: string): Promise<VraDispatchState> =>
+    ipcRenderer.invoke('workstation:vra-remove-card', cardId),
+
+acknowledgeVraEvidenceDelivery:
+  (request: VraEvidenceDeliveryAckRequest): Promise<VraEvidenceDeliveryAckResult> =>
+    ipcRenderer.invoke('workstation:vra-evidence-ack', request),
+
+getWorkstationSafety:
+  (): Promise<WorkstationSafetyObservation> =>
+    ipcRenderer.invoke('workstation:safety-state'),
+
+performWorkstationSafetyAction:
+  (request: WorkstationSafetyActionRequest): Promise<WorkstationSafetyActionResult> =>
+    ipcRenderer.invoke('workstation:safety-action', request),
+
+getWorkstationServerProcessState:
+  (): Promise<WorkstationServerProcessState> =>
+    ipcRenderer.invoke('workstation:server-process-state'),
+
+startWorkstationServer:
+  (): Promise<WorkstationServerProcessState> =>
+    ipcRenderer.invoke('workstation:server-start'),
+
+readClipboardText:
+  (): Promise<string> =>
+    ipcRenderer.invoke('portal:clipboard-read-text'),
+
+onVraDispatchChanged:
+  (listener: () => void): (() => void) => {
+    const wrapped = (): void => listener()
+    ipcRenderer.on('vra-dispatch:changed', wrapped)
+    return () => ipcRenderer.removeListener('vra-dispatch:changed', wrapped)
+  },
+
+onControlCommand:
+    (
+      listener:
+        (
+          serializedCommand:
+            string
+        ) => void
+    ): void => {
+      ipcRenderer.on(
+        'portal:control',
+        (
+          _event,
+          serializedCommand:
+            string
+        ) => {
+          listener(
+            serializedCommand
+          )
+        }
+      )
+    }
+}
+
+contextBridge.exposeInMainWorld(
+  'vertexPortal',
+  {
+    ...api,
+    submitSystemPolicyDecision: (decision: unknown) => ipcRenderer.invoke('vertex:system-policy-decision', decision),
+    readActiveSystemPolicy: (target: string) => ipcRenderer.invoke('vertex:system-policy-read-active', target)
+  }
+)
+
+// VERTEX_CONTRACT_CATALOG_API_000036V2: read-only canonical contract access for Portal renderer components.
+contextBridge.exposeInMainWorld('vertexContractCatalog', Object.freeze({
+  resolve: (id: 'vertex.vra.issue/1' | 'vertex.evidence.read/1') =>
+    ipcRenderer.invoke('vertex:contract-resolve', id),
+  list: () =>
+    ipcRenderer.invoke('vertex:contract-list')
+}))
+
+// VERTEX_SYSTEM_POLICY_RESOLVER_000062V2
+contextBridge.exposeInMainWorld('vertexSystemPolicy', {
+  resolve: (policyId: string) =>
+    ipcRenderer.invoke('vertex:system-policy-resolve', policyId),
+  list: () =>
+    ipcRenderer.invoke('vertex:system-policy-list')
+})
+
+// VERA_VXS_PRELOAD_API_000088V4_BEGIN
+contextBridge.exposeInMainWorld('veraVxs', {
+  execute: (request: unknown) => ipcRenderer.invoke('vera-vxs:execute', request)
+})
+// VERA_VXS_PRELOAD_API_000088V4_END

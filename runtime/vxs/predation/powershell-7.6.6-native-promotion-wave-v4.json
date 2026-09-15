@@ -1,0 +1,1939 @@
+{
+  "schema": "vertex-vxs/native-promotion-wave-4",
+  "ready_native_count": 272,
+  "wave_size": 8,
+  "wave_count": 34,
+  "waves": [
+    {
+      "wave": 1,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "VERB",
+          "decision": "PROMOTE_NOW",
+          "score": 85.0,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "MP_PERFORMANCE_REPORT",
+          "decision": "PROMOTE_NOW",
+          "score": 77.349625,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "MP_THREAT_CATALOG",
+          "decision": "PROMOTE_NOW",
+          "score": 77.349625,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "MP_THREAT_DETECTION",
+          "decision": "PROMOTE_NOW",
+          "score": 77.349625,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "ROLE_CAPABILITY",
+          "decision": "PROMOTE_NOW",
+          "score": 77.349625,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "UNIQUE",
+          "decision": "PROMOTE_NOW",
+          "score": 76.0,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "RANDOM",
+          "decision": "PROMOTE_NOW",
+          "score": 73.0,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "UPTIME",
+          "decision": "PROMOTE_NOW",
+          "score": 73.0,
+          "safe_ratio": 1.0
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 2,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "A_D_LICENSE_INFO",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "BCD_ENTRY_DEBUG_SETTINGS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "BCD_ENTRY_HYPERVISOR_SETTINGS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "BIT_LOCKER_VOLUME",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "B_C_CLIENT_CONFIGURATION",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "B_C_DATA_CACHE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "B_C_HASH_CACHE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "B_C_STATUS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 3,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "DEDUP_PROPERTIES",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "DELIVERY_OPTIMIZATION_LOG",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "DELIVERY_OPTIMIZATION_LOG_ANALYSIS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "DELIVERY_OPTIMIZATION_PERF_SNAP",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "DELIVERY_OPTIMIZATION_PERF_SNAP_THIS_MONTH",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "DISK_STORAGE_NODE_VIEW",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "DSC_CONFIGURATION_STATUS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "DTC_TRANSACTIONS_STATISTICS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 4,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "D_O_CONFIG",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "D_S_C_RESOURCE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "HGS_ATTESTATION_BASELINE_POLICY",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "HGS_TRACE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "HOT_FIX",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "INSTALLED_LANGUAGE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "INSTALLED_P_S_RESOURCE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "LAPS_A_A_D_PASSWORD",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 5,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "LAPS_A_D_EXTENDED_RIGHTS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "LAPS_A_D_PASSWORD",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "LAPS_DIAGNOSTICS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "MOCK_DYNAMIC_PARAMETERS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "OFFLOAD_DATA_TRANSFER_SETTING",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "OS_CONFIGURATION_DOCUMENT_RESULT",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "O_S_CONFIGURATION",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "O_S_CONFIGURATION_SCENARIO_DEFINITION_INFO",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 6,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "PARTITION_SUPPORTED_SIZE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "PFX_DATA",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "PHYSICAL_DISK_STORAGE_NODE_VIEW",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "PHYSICAL_EXTENT",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "PHYSICAL_EXTENT_ASSOCIATION",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "PMEM_UNUSED_REGION",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "PNP_DEVICE_PROPERTY",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "P_S_CALL_STACK",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 7,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "P_S_SESSION_CAPABILITY",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "RECOVERY_MANAGEMENT_PLUGINS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "RECOVERY_MANAGEMENT_PLUGIN_INFO",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "SECURE_BOOT_POLICY",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "SECURE_BOOT_S_V_N",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "SECURE_RANDOM",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "SMB_BAND_WIDTH_LIMIT",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "SMB_SERVER_CERT_PROPS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 8,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "START_APPS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_ADVANCED_PROPERTY",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_BUS_CLIENT_DEVICE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_BUS_TARGET_CACHE_STORE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_BUS_TARGET_CACHE_STORES_INSTANCE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_BUS_TARGET_DEVICE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_BUS_TARGET_DEVICE_INSTANCE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_CHASSIS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 9,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "STORAGE_ENCLOSURE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_ENCLOSURE_STORAGE_NODE_VIEW",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_ENCLOSURE_VENDOR_DATA",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_EXTENDED_STATUS",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_FIRMWARE_INFORMATION",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_HEALTH_ACTION",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_HEALTH_REPORT",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_NODE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 10,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "STORAGE_RACK",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_SCALE_UNIT",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_SITE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "STORAGE_TIER_SUPPORTED_SIZE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "SUPPORTED_CLUSTER_SIZES",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "TARGET_PORT",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "TARGET_PORTAL",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "U_I_CULTURE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 11,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "VIRTUAL_DISK_SUPPORTED_SIZE",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "VOLUME_CORRUPTION_COUNT",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "V_M_IDE_CONTROLLER",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "V_M_SWITCH_EXTENSION_PORT_DATA",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "V_M_SWITCH_EXTENSION_SWITCH_DATA",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "WINDOWS_UPDATE_LOG",
+          "decision": "PROMOTE_NOW",
+          "score": 71.5,
+          "safe_ratio": 1.0
+        },
+        {
+          "resource": "DSC_RESOURCE",
+          "decision": "KEEP_HYBRID",
+          "score": 53.349625,
+          "safe_ratio": 0.666667
+        },
+        {
+          "resource": "HGS_CLIENT_CONFIGURATION",
+          "decision": "KEEP_HYBRID",
+          "score": 53.349625,
+          "safe_ratio": 0.666667
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 12,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "KDS_ROOT_KEY",
+          "decision": "KEEP_HYBRID",
+          "score": 53.349625,
+          "safe_ratio": 0.666667
+        },
+        {
+          "resource": "RUNSPACE",
+          "decision": "KEEP_HYBRID",
+          "score": 51.0,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "CULTURE",
+          "decision": "KEEP_HYBRID",
+          "score": 48.0,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "DATE",
+          "decision": "KEEP_HYBRID",
+          "score": 43.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "ERROR",
+          "decision": "KEEP_HYBRID",
+          "score": 40.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "MEMBER",
+          "decision": "KEEP_HYBRID",
+          "score": 40.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "APP_LOCKER_POLICY",
+          "decision": "KEEP_HYBRID",
+          "score": 39.349625,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "LOG_PROPERTIES",
+          "decision": "KEEP_HYBRID",
+          "score": 39.349625,
+          "safe_ratio": 0.5
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 13,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "MP_THREAT",
+          "decision": "KEEP_HYBRID",
+          "score": 39.349625,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "DELIVERY_OPTIMIZATION_STATUS",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "DSC_LOCAL_CONFIGURATION_MANAGER",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "DTC_ADVANCED_SETTING",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "DTC_CLUSTER_DEFAULT",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "DTC_DEFAULT",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "DTC_TRANSACTION",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "DTC_TRANSACTIONS_TRACE_SETTING",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 14,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "D_O_DOWNLOAD_MODE",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "D_O_PERCENTAGE_MAX_BACKGROUND_BANDWIDTH",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "D_O_PERCENTAGE_MAX_FOREGROUND_BANDWIDTH",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "HGS_TRACE_TARGET",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "INITIATOR_ID",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "INITIATOR_PORT",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "KDS_CONFIGURATION",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "KMS_LICENSE_INFO",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 15,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "MARKDOWN_OPTION",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "NON_REMOVABLE_APPS_POLICY",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "ODBC_DRIVER",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "OPERATION_VALIDATION",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "OS_CONFIGURATION_PROPERTY",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "O_S_LICENSE_INFO",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "PCSV_DEVICE_LOG",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "PMEM_PHYSICAL_DEVICE",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 16,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "PRINT_CONFIGURATION",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "P_S_READ_LINE_OPTION",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "RECOVERY_REMOTE_MANAGEMENT_STATUS",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "RESILIENCY_SETTING",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "SMB_SESSION",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "SMB_WITNESS_CLIENT",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "STORAGE_DIAGNOSTIC_INFO",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "STORAGE_HISTORY",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 17,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "STORAGE_PROVIDER",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "STORAGE_RELIABILITY_COUNTER",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "STORAGE_SETTING",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "TIME_ZONE",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "TRACE_SOURCE",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "TROUBLESHOOTING_PACK",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "VOLUME_SCRUB_POLICY",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "V_H_D_SET",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 18,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "V_H_D_SNAPSHOT",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "V_M_BIOS",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "V_M_COM_PORT",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "V_M_FIRMWARE",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "V_M_FLOPPY_DISK_DRIVE",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "V_M_KEY_PROTECTOR",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "V_M_MEMORY",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "V_M_PARTITIONABLE_GPU",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 19,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "V_M_REPLICATION_SERVER",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "V_M_SECURITY",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "V_M_STORAGE_SETTINGS",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "V_M_SWITCH_TEAM",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "V_M_VIDEO",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "WHEA_MEMORY_POLICY",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "WINDOWS_DEVELOPER_LICENSE",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "WINDOWS_EDITION",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 20,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "WINDOWS_RESERVED_STORAGE_STATE",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "WINDOWS_SEARCH_SETTING",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "WIN_ACCEPT_LANGUAGE_FROM_LANGUAGE_LIST_OPT_OUT",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "WIN_CULTURE_FROM_LANGUAGE_LIST_OPT_OUT",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "WIN_DEFAULT_INPUT_METHOD_OVERRIDE",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "WIN_LANGUAGE_BAR_OPTION",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "WIN_U_I_LANGUAGE_OVERRIDE",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        },
+        {
+          "resource": "W_I_M_BOOT_ENTRY",
+          "decision": "KEEP_HYBRID",
+          "score": 37.5,
+          "safe_ratio": 0.5
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 21,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "DTC",
+          "decision": "KEEP_HYBRID",
+          "score": 30.349625,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "HELP",
+          "decision": "KEEP_HYBRID",
+          "score": 29.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "JSON",
+          "decision": "KEEP_HYBRID",
+          "score": 29.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "COUNTER",
+          "decision": "KEEP_HYBRID",
+          "score": 28.0,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "APP_BACKGROUND_TASK",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "ASSIGNED_ACCESS",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "B_C_DATA_CACHE_EXTENSION",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "CMS_MESSAGE",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 22,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "DISK_IMAGE",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "DTC_LOG",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "EXPERIMENTAL_FEATURE",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "FORMAT_DATA",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "ISCSI_SESSION",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "LOCAL_GROUP_MEMBER",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "ODBC_PERF_COUNTER",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "OS_CONFIGURATION_DOCUMENT",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 23,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "O_S_CONFIGURATION_SCENARIO_DEFINITION",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "PMEM_DEDICATED_MEMORY",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "PMEM_DISK",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "PNP_DEVICE",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "P_S_READ_LINE_KEY_HANDLER",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "RECOVERY_MANAGEMENT_PLUGIN_ALTITUDE",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "RUNSPACE_DEBUG",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "SMB_CLIENT_CONFIGURATION",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 24,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "SMB_DELEGATION",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "SMB_GLOBAL_MAPPING",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "SMB_MAPPING",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "SMB_MULTICHANNEL_CONSTRAINT",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "SMB_SERVER_CONFIGURATION",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "STORAGE_BUS_BINDING",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "STORAGE_FAULT_DOMAIN",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "STORAGE_HEALTH_SETTING",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 25,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "TLS_ECC_CURVE",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "TYPE_DATA",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "V_M_ASSIGNABLE_DEVICE",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "V_M_CONNECT_ACCESS",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "V_M_DIRECT_VIRTUAL_DISK",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "V_M_PMEM_CONTROLLER",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "V_M_SCSI_CONTROLLER",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "V_M_SWITCH_EXTENSION",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 26,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "WDAC_BID_TRACE",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "WINDOWS_CAPABILITY",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "WINDOWS_ERROR_REPORTING",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "WINDOWS_OPTIONAL_FEATURE",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "WIN_USER_LANGUAGE_LIST",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "W_S_MAN",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "W_S_MAN_CRED_S_S_P",
+          "decision": "KEEP_HYBRID",
+          "score": 23.5,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "HISTORY",
+          "decision": "KEEP_HYBRID",
+          "score": 22.0,
+          "safe_ratio": 0.25
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 27,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "V_M_RESOURCE_POOL",
+          "decision": "KEEP_HYBRID",
+          "score": 21.349625,
+          "safe_ratio": 0.333333
+        },
+        {
+          "resource": "SERVICE",
+          "decision": "KEEP_HYBRID",
+          "score": 16.6,
+          "safe_ratio": 0.36
+        },
+        {
+          "resource": "OBJECT",
+          "decision": "KEEP_HYBRID",
+          "score": 16.182958,
+          "safe_ratio": 0.222222
+        },
+        {
+          "resource": "DISK",
+          "decision": "KEEP_HYBRID",
+          "score": 15.0,
+          "safe_ratio": 0.2
+        },
+        {
+          "resource": "PARTITION",
+          "decision": "KEEP_HYBRID",
+          "score": 15.0,
+          "safe_ratio": 0.2
+        },
+        {
+          "resource": "BCD_ENTRY",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "BCD_STORE",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "DTC_CLUSTER_T_M_MAPPING",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 28,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "ISCSI_TARGET",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "ISCSI_TARGET_PORTAL",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "MASKING_SET",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "M_M_AGENT",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "ODBC_DSN",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "PCSV_DEVICE",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "SECURE_BOOT_U_E_F_I",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "SMB_SERVER_ALTERNATIVE_PORT",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 29,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "SMB_SHARE",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "STORAGE_DATA_COLLECTION",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "V_M_DVD_DRIVE",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "V_M_FIBRE_CHANNEL_HBA",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "V_M_GROUP",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "V_M_HARD_DISK_DRIVE",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "V_M_KEY_STORAGE_DRIVE",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "V_M_REPLICATION_AUTHORIZATION_ENTRY",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 30,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "V_M_SWITCH_EXTENSION_PORT_FEATURE",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "V_M_SWITCH_EXTENSION_SWITCH_FEATURE",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "WINDOWS_DRIVER",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "W_S_MAN_INSTANCE",
+          "decision": "KEEP_HYBRID",
+          "score": 14.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "DSC_CONFIGURATION",
+          "decision": "KEEP_HYBRID",
+          "score": 14.492482,
+          "safe_ratio": 0.285714
+        },
+        {
+          "resource": "PROCESS",
+          "decision": "KEEP_HYBRID",
+          "score": 12.25,
+          "safe_ratio": 0.3125
+        },
+        {
+          "resource": "MP_PREFERENCE",
+          "decision": "KEEP_HYBRID",
+          "score": 8.349625,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "P_S_REPOSITORY",
+          "decision": "KEEP_HYBRID",
+          "score": 8.349625,
+          "safe_ratio": 0.25
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 31,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "V_M_REPLICATION",
+          "decision": "KEEP_HYBRID",
+          "score": 8.349625,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "DTC_TRANSACTIONS_TRACE_SESSION",
+          "decision": "KEEP_HYBRID",
+          "score": 7.5,
+          "safe_ratio": 0.2
+        },
+        {
+          "resource": "HGS_GUARDIAN",
+          "decision": "KEEP_HYBRID",
+          "score": 7.5,
+          "safe_ratio": 0.2
+        },
+        {
+          "resource": "LOCAL_GROUP",
+          "decision": "KEEP_HYBRID",
+          "score": 7.5,
+          "safe_ratio": 0.2
+        },
+        {
+          "resource": "P_S_BREAKPOINT",
+          "decision": "KEEP_HYBRID",
+          "score": 7.5,
+          "safe_ratio": 0.2
+        },
+        {
+          "resource": "P_S_RESOURCE_REPOSITORY",
+          "decision": "KEEP_HYBRID",
+          "score": 7.5,
+          "safe_ratio": 0.2
+        },
+        {
+          "resource": "SMB_CLIENT_ACCESS_TO_SERVER",
+          "decision": "KEEP_HYBRID",
+          "score": 7.5,
+          "safe_ratio": 0.2
+        },
+        {
+          "resource": "SMB_SHARE_ACCESS",
+          "decision": "KEEP_HYBRID",
+          "score": 7.5,
+          "safe_ratio": 0.2
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 32,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "STORAGE_BUS_CACHE",
+          "decision": "KEEP_HYBRID",
+          "score": 7.5,
+          "safe_ratio": 0.2
+        },
+        {
+          "resource": "STORAGE_TIER",
+          "decision": "KEEP_HYBRID",
+          "score": 7.5,
+          "safe_ratio": 0.2
+        },
+        {
+          "resource": "V_M_SNAPSHOT",
+          "decision": "KEEP_HYBRID",
+          "score": 7.5,
+          "safe_ratio": 0.2
+        },
+        {
+          "resource": "VOLUME",
+          "decision": "KEEP_HYBRID",
+          "score": 6.571429,
+          "safe_ratio": 0.142857
+        },
+        {
+          "resource": "JOB",
+          "decision": "KEEP_HYBRID",
+          "score": 5.588235,
+          "safe_ratio": 0.176471
+        },
+        {
+          "resource": "PRINTER",
+          "decision": "KEEP_HYBRID",
+          "score": 5.5,
+          "safe_ratio": 0.25
+        },
+        {
+          "resource": "SECURITY",
+          "decision": "KEEP_HYBRID",
+          "score": 4.065217,
+          "safe_ratio": 0.326087
+        },
+        {
+          "resource": "SHELL",
+          "decision": "KEEP_HYBRID",
+          "score": 2.666667,
+          "safe_ratio": 0.277778
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 33,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "PACKAGE",
+          "decision": "KEEP_HYBRID",
+          "score": 2.217949,
+          "safe_ratio": 0.145299
+        },
+        {
+          "resource": "PHYSICAL_DISK",
+          "decision": "KEEP_HYBRID",
+          "score": 1.5,
+          "safe_ratio": 0.166667
+        },
+        {
+          "resource": "P_S_SESSION_CONFIGURATION",
+          "decision": "KEEP_HYBRID",
+          "score": 1.5,
+          "safe_ratio": 0.166667
+        },
+        {
+          "resource": "STORAGE_BUS_DISK",
+          "decision": "KEEP_HYBRID",
+          "score": 1.5,
+          "safe_ratio": 0.166667
+        },
+        {
+          "resource": "STORAGE_POOL",
+          "decision": "KEEP_HYBRID",
+          "score": 1.5,
+          "safe_ratio": 0.166667
+        },
+        {
+          "resource": "V_M_SWITCH",
+          "decision": "KEEP_HYBRID",
+          "score": 1.5,
+          "safe_ratio": 0.166667
+        },
+        {
+          "resource": "V_H_D",
+          "decision": "KEEP_HYBRID",
+          "score": -2.650375,
+          "safe_ratio": 0.2
+        },
+        {
+          "resource": "BITS_TRANSFER",
+          "decision": "KEEP_HYBRID",
+          "score": -3.928571,
+          "safe_ratio": 0.142857
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    },
+    {
+      "wave": 34,
+      "candidate_count": 8,
+      "resources": [
+        {
+          "resource": "LOCAL_USER",
+          "decision": "KEEP_HYBRID",
+          "score": -3.928571,
+          "safe_ratio": 0.142857
+        },
+        {
+          "resource": "P_S_RESOURCE",
+          "decision": "KEEP_HYBRID",
+          "score": -3.928571,
+          "safe_ratio": 0.142857
+        },
+        {
+          "resource": "V_M_SAN",
+          "decision": "KEEP_HYBRID",
+          "score": -3.928571,
+          "safe_ratio": 0.142857
+        },
+        {
+          "resource": "EVENTLOG",
+          "decision": "KEEP_HYBRID",
+          "score": -7.911765,
+          "safe_ratio": 0.176471
+        },
+        {
+          "resource": "V_M",
+          "decision": "KEEP_HYBRID",
+          "score": -9.5,
+          "safe_ratio": 0.15
+        },
+        {
+          "resource": "P_S_SESSION",
+          "decision": "KEEP_HYBRID",
+          "score": -18.5,
+          "safe_ratio": 0.1
+        },
+        {
+          "resource": "VIRTUAL_DISK",
+          "decision": "KEEP_HYBRID",
+          "score": -18.5,
+          "safe_ratio": 0.1
+        },
+        {
+          "resource": "WINDOWS_IMAGE",
+          "decision": "KEEP_HYBRID",
+          "score": -23.5,
+          "safe_ratio": 0.083333
+        }
+      ],
+      "execution_authority": "HUMAN_APPLY_REQUIRED_PER_ISSUANCE",
+      "lane_allocation_authority": "VERTEX_WORKSTATION"
+    }
+  ],
+  "next_candidate": {
+    "resource": "VERB",
+    "tier": "READY_NATIVE",
+    "decision": "PROMOTE_NOW",
+    "score": 85.0,
+    "record_count": 1,
+    "safe_count": 1,
+    "unsafe_count": 0,
+    "safe_ratio": 1.0,
+    "actions": [
+      {
+        "action": "OBSERVE",
+        "count": 1
+      }
+    ],
+    "authorities": {
+      "AUTO_SAFE": 1
+    },
+    "side_effects": {
+      "NONE": 1
+    },
+    "sample_semantic_ids": [
+      "ps:microsoft.powershell.utility:get-verb"
+    ]
+  },
+  "authority": "HUMAN_APPLY",
+  "lane_allocation_authority": "VERTEX_WORKSTATION"
+}

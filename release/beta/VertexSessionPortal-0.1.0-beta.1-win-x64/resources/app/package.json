@@ -1,0 +1,11 @@
+{
+  "name": "vertex-session-portal",
+  "productName": "VERTEX Session Portal",
+  "version": "0.1.0-beta.1",
+  "private": true,
+  "description": "VERTEX Session Portal — Vera multi-session Agent System / Virtual ARD workspace",
+  "main": "out/main/index.js",
+  "dependencies": {
+    "better-sqlite3": "13.0.3"
+  }
+}

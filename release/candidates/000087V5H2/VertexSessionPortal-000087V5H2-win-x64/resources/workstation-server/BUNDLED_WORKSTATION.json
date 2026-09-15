@@ -1,0 +1,11 @@
+{
+  "schema": "vertex-session-portal/bundled-workstation-1",
+  "bind": "127.0.0.1:47832",
+  "binary": "vertex-workstation.exe",
+  "runtime_root": "runtime",
+  "source_project": "G:\\Vertex_Project\\Development\\vertex_workstation",
+  "sha256": "85b96ba0289245fef8e440a95f40e2f397a5b123e8d5b7fe5fa0120cbe2e1e5f",
+  "max_logical_lanes": 32,
+  "default_logical_lanes": 5,
+  "authority": "WORKSTATION"
+}

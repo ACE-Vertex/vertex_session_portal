@@ -1,0 +1,5031 @@
+{
+  "schema": "vertex-vxs/native-promotion-plan-1",
+  "runtime_version": "7.6.6",
+  "generated_from": {
+    "ir_path": "G:\\Vertex_Project\\Development\\vertex_session_portal\\runtime\\vxs\\predation\\powershell-7.6.6-capability-ir.json",
+    "ir_sha256": "d7858f8e0f2f0b5588f2d8c5e4a52c109aa15848b364ba785f4ceab31daadc8f",
+    "graph_path": "G:\\Vertex_Project\\Development\\vertex_session_portal\\runtime\\vxs\\predation\\powershell-7.6.6-capability-graph.json",
+    "graph_sha256": "803d3457de801f60bdbf07d670379ecd92c450075ad56533fd05c13023cbee8e"
+  },
+  "policy": {
+    "promotion_thresholds": {
+      "PROMOTE_NOW": 0.82,
+      "PROMOTE_NEXT": 0.68,
+      "KEEP_HYBRID": 0.52
+    },
+    "first_wave_rule": "AUTO_SAFE + NONE side effect + PROMOTE_NOW",
+    "native_language": "rust",
+    "transport": "vxn",
+    "powershell_role_after_promotion": "teacher-and-fallback"
+  },
+  "summary": {
+    "input_ir_record_count": 2394,
+    "semantic_capability_count": 2337,
+    "promotion_decision_counts": {
+      "KEEP_HYBRID": 301,
+      "POWERSHELL_BACKEND": 1469,
+      "PROMOTE_NEXT": 338,
+      "PROMOTE_NOW": 229
+    },
+    "first_wave_organ_candidate_count": 64,
+    "native_organ_count": 1
+  },
+  "native_organs": [
+    {
+      "organ_id": "vxs-native-network",
+      "resource": "NETWORK",
+      "provider_language": "rust",
+      "transport": "vxn",
+      "authority_default": "AUTO_SAFE",
+      "capability_count": 64,
+      "capabilities": [
+        {
+          "capability_id": "ps:branchcache:get-bcnetworkconfiguration",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-BCNetworkConfiguration"
+        },
+        {
+          "capability_id": "ps:configci:get-cipolicy",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-CIPolicy"
+        },
+        {
+          "capability_id": "ps:configci:get-cipolicyidinfo",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-CIPolicyIdInfo"
+        },
+        {
+          "capability_id": "ps:configci:get-cipolicyinfo",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-CIPolicyInfo"
+        },
+        {
+          "capability_id": "ps:configdefender:get-mpbehavioralnetworkblockingrules",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-MpBehavioralNetworkBlockingRules"
+        },
+        {
+          "capability_id": "ps:defender:get-mpbehavioralnetworkblockingrules",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-MpBehavioralNetworkBlockingRules"
+        },
+        {
+          "capability_id": "ps:dnsclient:get-dnsclient",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-DnsClient"
+        },
+        {
+          "capability_id": "ps:dnsclient:get-dnsclientcache",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-DnsClientCache"
+        },
+        {
+          "capability_id": "ps:dnsclient:get-dnsclientdohserveraddress",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-DnsClientDohServerAddress"
+        },
+        {
+          "capability_id": "ps:dnsclient:get-dnsclientglobalsetting",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-DnsClientGlobalSetting"
+        },
+        {
+          "capability_id": "ps:dnsclient:get-dnsclientnrptglobal",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-DnsClientNrptGlobal"
+        },
+        {
+          "capability_id": "ps:dnsclient:get-dnsclientnrptpolicy",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-DnsClientNrptPolicy"
+        },
+        {
+          "capability_id": "ps:dnsclient:get-dnsclientnrptrule",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-DnsClientNrptRule"
+        },
+        {
+          "capability_id": "ps:dnsclient:get-dnsclientserveraddress",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-DnsClientServerAddress"
+        },
+        {
+          "capability_id": "ps:get-netview:get-netview",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetView"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmgpupartitionadapter",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMGpuPartitionAdapter"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmmigrationnetwork",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMMigrationNetwork"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmnetworkadapter",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMNetworkAdapter"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmnetworkadapteracl",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMNetworkAdapterAcl"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmnetworkadapterextendedacl",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMNetworkAdapterExtendedAcl"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmnetworkadapterfailoverconfiguration",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMNetworkAdapterFailoverConfiguration"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmnetworkadapterisolation",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMNetworkAdapterIsolation"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmnetworkadapterrdma",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMNetworkAdapterRdma"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmnetworkadapterroutingdomainmapping",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMNetworkAdapterRoutingDomainMapping"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmnetworkadapterteammapping",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMNetworkAdapterTeamMapping"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmnetworkadaptervlan",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMNetworkAdapterVlan"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmremotefx3dvideoadapter",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMRemoteFx3dVideoAdapter"
+        },
+        {
+          "capability_id": "ps:hyper-v:get-vmremotefxphysicalvideoadapter",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-VMRemoteFXPhysicalVideoAdapter"
+        },
+        {
+          "capability_id": "ps:iscsi:get-iscsiconnection",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-IscsiConnection"
+        },
+        {
+          "capability_id": "ps:ise:get-isesnippet",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-IseSnippet"
+        },
+        {
+          "capability_id": "ps:microsoft.powershell.psresourceget:get-psscriptfileinfo",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-PSScriptFileInfo"
+        },
+        {
+          "capability_id": "ps:msdtc:get-dtcnetworksetting",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-DtcNetworkSetting"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapter",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapter"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapteradvancedproperty",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterAdvancedProperty"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterbinding",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterBinding"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterchecksumoffload",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterChecksumOffload"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterdatapathconfiguration",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterDataPathConfiguration"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterencapsulatedpackettaskoffload",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterEncapsulatedPacketTaskOffload"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterhardwareinfo",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterHardwareInfo"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapteripsecoffload",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterIPsecOffload"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterlso",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterLso"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterpacketdirect",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterPacketDirect"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterpowermanagement",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterPowerManagement"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterqos",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterQos"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterrdma",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterRdma"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterrsc",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterRsc"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterrss",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterRss"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadaptersriov",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterSriov"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadaptersriovvf",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterSriovVf"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapterstatistics",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterStatistics"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapteruro",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterUro"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadapteruso",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterUso"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadaptervmq",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterVmq"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadaptervmqqueue",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterVMQQueue"
+        },
+        {
+          "capability_id": "ps:netadapter:get-netadaptervport",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetAdapterVPort"
+        },
+        {
+          "capability_id": "ps:netconnection:get-netconnectionprofile",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetConnectionProfile"
+        },
+        {
+          "capability_id": "ps:neteventpacketcapture:get-neteventnetworkadapter",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetEventNetworkAdapter"
+        },
+        {
+          "capability_id": "ps:neteventpacketcapture:get-neteventpacketcaptureprovider",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetEventPacketCaptureProvider"
+        },
+        {
+          "capability_id": "ps:neteventpacketcapture:get-neteventprovider",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetEventProvider"
+        },
+        {
+          "capability_id": "ps:neteventpacketcapture:get-neteventsession",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetEventSession"
+        },
+        {
+          "capability_id": "ps:neteventpacketcapture:get-neteventvfpprovider",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetEventVFPProvider"
+        },
+        {
+          "capability_id": "ps:neteventpacketcapture:get-neteventvmnetworkadapter",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetEventVmNetworkAdapter"
+        },
+        {
+          "capability_id": "ps:neteventpacketcapture:get-neteventvmswitch",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetEventVmSwitch"
+        },
+        {
+          "capability_id": "ps:neteventpacketcapture:get-neteventvmswitchprovider",
+          "action": "OBSERVE",
+          "score": 0.951219,
+          "source_command": "Get-NetEventVmSwitchProvider"
+        }
+      ]
+    }
+  ],
+  "top_candidates": [
+    {
+      "capability_id": "ps:branchcache:get-bcnetworkconfiguration",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-BCNetworkConfiguration",
+        "module_name": "BranchCache",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:configci:get-cipolicy",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-CIPolicy",
+        "module_name": "ConfigCI",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:configci:get-cipolicyidinfo",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-CIPolicyIdInfo",
+        "module_name": "ConfigCI",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:configci:get-cipolicyinfo",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-CIPolicyInfo",
+        "module_name": "ConfigCI",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:configdefender:get-mpbehavioralnetworkblockingrules",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-MpBehavioralNetworkBlockingRules",
+        "module_name": "ConfigDefender",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:defender:get-mpbehavioralnetworkblockingrules",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-MpBehavioralNetworkBlockingRules",
+        "module_name": "Defender",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:dnsclient:get-dnsclient",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DnsClient",
+        "module_name": "DnsClient",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:dnsclient:get-dnsclientcache",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DnsClientCache",
+        "module_name": "DnsClient",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:dnsclient:get-dnsclientdohserveraddress",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DnsClientDohServerAddress",
+        "module_name": "DnsClient",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:dnsclient:get-dnsclientglobalsetting",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DnsClientGlobalSetting",
+        "module_name": "DnsClient",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:dnsclient:get-dnsclientnrptglobal",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DnsClientNrptGlobal",
+        "module_name": "DnsClient",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:dnsclient:get-dnsclientnrptpolicy",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DnsClientNrptPolicy",
+        "module_name": "DnsClient",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:dnsclient:get-dnsclientnrptrule",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DnsClientNrptRule",
+        "module_name": "DnsClient",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:dnsclient:get-dnsclientserveraddress",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DnsClientServerAddress",
+        "module_name": "DnsClient",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:get-netview:get-netview",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetView",
+        "module_name": "Get-NetView",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmgpupartitionadapter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMGpuPartitionAdapter",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmmigrationnetwork",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMMigrationNetwork",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmnetworkadapter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMNetworkAdapter",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmnetworkadapteracl",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMNetworkAdapterAcl",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmnetworkadapterextendedacl",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMNetworkAdapterExtendedAcl",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmnetworkadapterfailoverconfiguration",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMNetworkAdapterFailoverConfiguration",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmnetworkadapterisolation",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMNetworkAdapterIsolation",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmnetworkadapterrdma",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMNetworkAdapterRdma",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmnetworkadapterroutingdomainmapping",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMNetworkAdapterRoutingDomainMapping",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmnetworkadapterteammapping",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMNetworkAdapterTeamMapping",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmnetworkadaptervlan",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMNetworkAdapterVlan",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmremotefx3dvideoadapter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMRemoteFx3dVideoAdapter",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmremotefxphysicalvideoadapter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMRemoteFXPhysicalVideoAdapter",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:iscsi:get-iscsiconnection",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-IscsiConnection",
+        "module_name": "iSCSI",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:ise:get-isesnippet",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-IseSnippet",
+        "module_name": "ISE",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:microsoft.powershell.psresourceget:get-psscriptfileinfo",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-PSScriptFileInfo",
+        "module_name": "Microsoft.PowerShell.PSResourceGet",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:msdtc:get-dtcnetworksetting",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DtcNetworkSetting",
+        "module_name": "MsDtc",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapter",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapteradvancedproperty",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterAdvancedProperty",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterbinding",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterBinding",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterchecksumoffload",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterChecksumOffload",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterdatapathconfiguration",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterDataPathConfiguration",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterencapsulatedpackettaskoffload",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterEncapsulatedPacketTaskOffload",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterhardwareinfo",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterHardwareInfo",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapteripsecoffload",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterIPsecOffload",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterlso",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterLso",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterpacketdirect",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterPacketDirect",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterpowermanagement",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterPowerManagement",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterqos",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterQos",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterrdma",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterRdma",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterrsc",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterRsc",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterrss",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterRss",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadaptersriov",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterSriov",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadaptersriovvf",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterSriovVf",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapterstatistics",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterStatistics",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapteruro",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterUro",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadapteruso",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterUso",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadaptervmq",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterVmq",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadaptervmqqueue",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterVMQQueue",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netadapter:get-netadaptervport",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetAdapterVPort",
+        "module_name": "NetAdapter",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netconnection:get-netconnectionprofile",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetConnectionProfile",
+        "module_name": "NetConnection",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:neteventpacketcapture:get-neteventnetworkadapter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetEventNetworkAdapter",
+        "module_name": "NetEventPacketCapture",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:neteventpacketcapture:get-neteventpacketcaptureprovider",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetEventPacketCaptureProvider",
+        "module_name": "NetEventPacketCapture",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:neteventpacketcapture:get-neteventprovider",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetEventProvider",
+        "module_name": "NetEventPacketCapture",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:neteventpacketcapture:get-neteventsession",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetEventSession",
+        "module_name": "NetEventPacketCapture",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:neteventpacketcapture:get-neteventvfpprovider",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetEventVFPProvider",
+        "module_name": "NetEventPacketCapture",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:neteventpacketcapture:get-neteventvmnetworkadapter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetEventVmNetworkAdapter",
+        "module_name": "NetEventPacketCapture",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:neteventpacketcapture:get-neteventvmswitch",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetEventVmSwitch",
+        "module_name": "NetEventPacketCapture",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:neteventpacketcapture:get-neteventvmswitchprovider",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetEventVmSwitchProvider",
+        "module_name": "NetEventPacketCapture",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:neteventpacketcapture:get-neteventwfpcaptureprovider",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetEventWFPCaptureProvider",
+        "module_name": "NetEventPacketCapture",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netlbfo:get-netlbfoteam",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetLbfoTeam",
+        "module_name": "NetLbfo",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netlbfo:get-netlbfoteammember",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetLbfoTeamMember",
+        "module_name": "NetLbfo",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netlbfo:get-netlbfoteamnic",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetLbfoTeamNic",
+        "module_name": "NetLbfo",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netnat:get-netnat",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetNat",
+        "module_name": "NetNat",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netnat:get-netnatexternaladdress",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetNatExternalAddress",
+        "module_name": "NetNat",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netnat:get-netnatglobal",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetNatGlobal",
+        "module_name": "NetNat",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netnat:get-netnatsession",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetNatSession",
+        "module_name": "NetNat",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netnat:get-netnatstaticmapping",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetNatStaticMapping",
+        "module_name": "NetNat",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netqos:get-netqospolicy",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetQosPolicy",
+        "module_name": "NetQos",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-dapolicychange",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DAPolicyChange",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewalladdressfilter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallAddressFilter",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallapplicationfilter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallApplicationFilter",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewalldynamickeywordaddress",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallDynamicKeywordAddress",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallhypervport",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallHyperVPort",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallhypervprofile",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallHyperVProfile",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallhypervrule",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallHyperVRule",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallhypervvmcreator",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallHyperVVMCreator",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallhypervvmsetting",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallHyperVVMSetting",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallinterfacefilter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallInterfaceFilter",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallinterfacetypefilter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallInterfaceTypeFilter",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallportfilter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallPortFilter",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallprofile",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallProfile",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallrule",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallRule",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallsecurityfilter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallSecurityFilter",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallsetting",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallSetting",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netipsecdospsetting",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPsecDospSetting",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netipsecmainmodecryptoset",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPsecMainModeCryptoSet",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netipsecmainmoderule",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPsecMainModeRule",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netipsecmainmodesa",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPsecMainModeSA",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netipsecphase1authset",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPsecPhase1AuthSet",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netipsecphase2authset",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPsecPhase2AuthSet",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netipsecquickmodecryptoset",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPsecQuickModeCryptoSet",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netipsecquickmodesa",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPsecQuickModeSA",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netipsecrule",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPsecRule",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netswitchteam:get-netswitchteam",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetSwitchTeam",
+        "module_name": "NetSwitchTeam",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netswitchteam:get-netswitchteammember",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetSwitchTeamMember",
+        "module_name": "NetSwitchTeam",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-netcompartment",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetCompartment",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-netipaddress",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPAddress",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-netipconfiguration",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPConfiguration",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-netipinterface",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPInterface",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-netipv4protocol",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPv4Protocol",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-netipv6protocol",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPv6Protocol",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-netneighbor",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetNeighbor",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-netoffloadglobalsetting",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetOffloadGlobalSetting",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-netprefixpolicy",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetPrefixPolicy",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-netroute",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetRoute",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-nettcpconnection",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetTCPConnection",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-nettcpsetting",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetTCPSetting",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-nettransportfilter",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetTransportFilter",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-netudpendpoint",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetUDPEndpoint",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:nettcpip:get-netudpsetting",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetUDPSetting",
+        "module_name": "NetTCPIP",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networkconnectivitystatus:get-daconnectionstatus",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DAConnectionStatus",
+        "module_name": "NetworkConnectivityStatus",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networkconnectivitystatus:get-ncsipolicyconfiguration",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NCSIPolicyConfiguration",
+        "module_name": "NetworkConnectivityStatus",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networkswitchmanager:get-networkswitchethernetport",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetworkSwitchEthernetPort",
+        "module_name": "NetworkSwitchManager",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networkswitchmanager:get-networkswitchfeature",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetworkSwitchFeature",
+        "module_name": "NetworkSwitchManager",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networkswitchmanager:get-networkswitchglobaldata",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetworkSwitchGlobalData",
+        "module_name": "NetworkSwitchManager",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networkswitchmanager:get-networkswitchvlan",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetworkSwitchVlan",
+        "module_name": "NetworkSwitchManager",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networktransition:get-net6to4configuration",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-Net6to4Configuration",
+        "module_name": "NetworkTransition",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networktransition:get-netdnstransitionconfiguration",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetDnsTransitionConfiguration",
+        "module_name": "NetworkTransition",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networktransition:get-netdnstransitionmonitoring",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetDnsTransitionMonitoring",
+        "module_name": "NetworkTransition",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networktransition:get-netiphttpsconfiguration",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPHttpsConfiguration",
+        "module_name": "NetworkTransition",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networktransition:get-netiphttpsstate",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIPHttpsState",
+        "module_name": "NetworkTransition",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networktransition:get-netisatapconfiguration",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetIsatapConfiguration",
+        "module_name": "NetworkTransition",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networktransition:get-netnattransitionconfiguration",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetNatTransitionConfiguration",
+        "module_name": "NetworkTransition",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networktransition:get-netnattransitionmonitoring",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetNatTransitionMonitoring",
+        "module_name": "NetworkTransition",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networktransition:get-netteredoconfiguration",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetTeredoConfiguration",
+        "module_name": "NetworkTransition",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:networktransition:get-netteredostate",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetTeredoState",
+        "module_name": "NetworkTransition",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:oslicense:get-subscriptionlicenseinfo",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-SubscriptionLicenseInfo",
+        "module_name": "OSLicense",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:powershellget:get-installedscript",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-InstalledScript",
+        "module_name": "PowerShellGet",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:smbshare:get-smbclientnetworkinterface",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-SmbClientNetworkInterface",
+        "module_name": "SmbShare",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:smbshare:get-smbconnection",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-SmbConnection",
+        "module_name": "SmbShare",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:smbshare:get-smbmultichannelconnection",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-SmbMultichannelConnection",
+        "module_name": "SmbShare",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:smbshare:get-smbservernetworkinterface",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-SmbServerNetworkInterface",
+        "module_name": "SmbShare",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:tls:get-tlsciphersuite",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-TlsCipherSuite",
+        "module_name": "TLS",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:vpnclient:get-vpnconnection",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VpnConnection",
+        "module_name": "VpnClient",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:vpnclient:get-vpnconnectiontrigger",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VpnConnectionTrigger",
+        "module_name": "VpnClient",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:winhttpproxy:get-winhttpproxy",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.951219,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-WinhttpProxy",
+        "module_name": "WinHttpProxy",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:microsoft.powershell.management:get-clipboard",
+      "action": "OBSERVE",
+      "resource": "NETWORK",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.938969,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 144,
+        "frequency_score": 0.855097,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.934,
+        "dependency_penalty": 0.1225,
+        "parameter_count": 14
+      },
+      "source": {
+        "command_name": "Get-Clipboard",
+        "module_name": "Microsoft.PowerShell.Management",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:applocker:get-applockerfileinformation",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-AppLockerFileInformation",
+        "module_name": "AppLocker",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:branchcache:get-bccontentserverconfiguration",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-BCContentServerConfiguration",
+        "module_name": "BranchCache",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:directaccessclientcomponents:get-daentrypointtableitem",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DAEntryPointTableItem",
+        "module_name": "DirectAccessClientComponents",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:dism:get-windowsimagecontent",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-WindowsImageContent",
+        "module_name": "Dism",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hgsdiagnostics:get-hgstracefiledata",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-HgsTraceFileData",
+        "module_name": "HgsDiagnostics",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmstoragepath",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMStoragePath",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:international:get-winhomelocation",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-WinHomeLocation",
+        "module_name": "International",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:osconfiguration:get-osconfigurationdocumentcontent",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-OsConfigurationDocumentContent",
+        "module_name": "OsConfiguration",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:pester:get-testdriveitem",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-TestDriveItem",
+        "module_name": "Pester",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:smbshare:get-smbopenfile",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-SmbOpenFile",
+        "module_name": "SmbShare",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:storage:get-fileintegrity",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-FileIntegrity",
+        "module_name": "Storage",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:storage:get-fileshare",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-FileShare",
+        "module_name": "Storage",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:storage:get-fileshareaccesscontrolentry",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-FileShareAccessControlEntry",
+        "module_name": "Storage",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:storage:get-filestoragetier",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-FileStorageTier",
+        "module_name": "Storage",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:storage:get-storagefileserver",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.899497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-StorageFileServer",
+        "module_name": "Storage",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:branchcache:get-bchostedcacheserverconfiguration",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-BCHostedCacheServerConfiguration",
+        "module_name": "BranchCache",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:cimcmdlets:get-cimassociatedinstance",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-CimAssociatedInstance",
+        "module_name": "CimCmdlets",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:cimcmdlets:get-cimclass",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-CimClass",
+        "module_name": "CimCmdlets",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:cimcmdlets:get-ciminstance",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-CimInstance",
+        "module_name": "CimCmdlets",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:cimcmdlets:get-cimsession",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-CimSession",
+        "module_name": "CimCmdlets",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:configci:get-systemdriver",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-SystemDriver",
+        "module_name": "ConfigCI",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:configdefender:get-mpcomputerstatus",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-MpComputerStatus",
+        "module_name": "ConfigDefender",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:defender:get-mpcomputerstatus",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-MpComputerStatus",
+        "module_name": "Defender",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hgsclient:get-hgsclienthostkey",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-HgsClientHostKey",
+        "module_name": "HgsClient",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmhost",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMHost",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmhostassignabledevice",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMHostAssignableDevice",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmhostcluster",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMHostCluster",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmhostnumanode",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMHostNumaNode",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmhostnumanodestatus",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMHostNumaNodeStatus",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmhostpartitionablegpu",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMHostPartitionableGpu",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmhostsupportedversion",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMHostSupportedVersion",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmsystemswitchextension",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMSystemSwitchExtension",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmsystemswitchextensionportfeature",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMSystemSwitchExtensionPortFeature",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmsystemswitchextensionswitchfeature",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMSystemSwitchExtensionSwitchFeature",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:international:get-winsystemlocale",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-WinSystemLocale",
+        "module_name": "International",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:languagepackmanagement:get-systempreferreduilanguage",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-SystemPreferredUILanguage",
+        "module_name": "LanguagePackManagement",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:msdtc:get-dtcadvancedhostsetting",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-DtcAdvancedHostSetting",
+        "module_name": "MsDtc",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:storage:get-storagesubsystem",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-StorageSubSystem",
+        "module_name": "Storage",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:storage:get-supportedfilesystems",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.889757,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-SupportedFileSystems",
+        "module_name": "Storage",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:microsoft.powershell.management:get-location",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.885497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.14,
+        "parameter_count": 16
+      },
+      "source": {
+        "command_name": "Get-Location",
+        "module_name": "Microsoft.PowerShell.Management",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:microsoft.powershell.utility:get-filehash",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.885497,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.14,
+        "parameter_count": 16
+      },
+      "source": {
+        "command_name": "Get-FileHash",
+        "module_name": "Microsoft.PowerShell.Utility",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:microsoft.powershell.management:get-itemproperty",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.882872,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.16625,
+        "parameter_count": 19
+      },
+      "source": {
+        "command_name": "Get-ItemProperty",
+        "module_name": "Microsoft.PowerShell.Management",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:microsoft.powershell.management:get-itempropertyvalue",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.882872,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.16625,
+        "parameter_count": 19
+      },
+      "source": {
+        "command_name": "Get-ItemPropertyValue",
+        "module_name": "Microsoft.PowerShell.Management",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:microsoft.powershell.management:get-item",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.881997,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.175,
+        "parameter_count": 20
+      },
+      "source": {
+        "command_name": "Get-Item",
+        "module_name": "Microsoft.PowerShell.Management",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:microsoft.powershell.utility:get-host",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.879257,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.105,
+        "parameter_count": 12
+      },
+      "source": {
+        "command_name": "Get-Host",
+        "module_name": "Microsoft.PowerShell.Utility",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:microsoft.powershell.management:get-computerinfo",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.878382,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.11375,
+        "parameter_count": 13
+      },
+      "source": {
+        "command_name": "Get-ComputerInfo",
+        "module_name": "Microsoft.PowerShell.Management",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:microsoft.powershell.core:get-pssubsystem",
+      "action": "OBSERVE",
+      "resource": "SYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.877507,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 27,
+        "frequency_score": 0.572536,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9175,
+        "dependency_penalty": 0.1225,
+        "parameter_count": 14
+      },
+      "source": {
+        "command_name": "Get-PSSubsystem",
+        "module_name": "Microsoft.PowerShell.Core",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:microsoft.powershell.management:get-childitem",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.874997,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.245,
+        "parameter_count": 28
+      },
+      "source": {
+        "command_name": "Get-ChildItem",
+        "module_name": "Microsoft.PowerShell.Management",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:microsoft.powershell.management:get-content",
+      "action": "OBSERVE",
+      "resource": "FILESYSTEM",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.874997,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 22,
+        "frequency_score": 0.538737,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.9725,
+        "dependency_penalty": 0.245,
+        "parameter_count": 28
+      },
+      "source": {
+        "command_name": "Get-Content",
+        "module_name": "Microsoft.PowerShell.Management",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hostnetworkingservice:get-hnsendpoint",
+      "action": "OBSERVE",
+      "resource": "SERVICE",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.865926,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 9,
+        "frequency_score": 0.395628,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.956,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-HnsEndpoint",
+        "module_name": "HostNetworkingService",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hostnetworkingservice:get-hnsendpointaddresses",
+      "action": "OBSERVE",
+      "resource": "SERVICE",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.865926,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 9,
+        "frequency_score": 0.395628,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.956,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-HnsEndpointAddresses",
+        "module_name": "HostNetworkingService",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hostnetworkingservice:get-hnsendpointstats",
+      "action": "OBSERVE",
+      "resource": "SERVICE",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.865926,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 9,
+        "frequency_score": 0.395628,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.956,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-HnsEndpointStats",
+        "module_name": "HostNetworkingService",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hostnetworkingservice:get-hnsnamespace",
+      "action": "OBSERVE",
+      "resource": "SERVICE",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.865926,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 9,
+        "frequency_score": 0.395628,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.956,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-HnsNamespace",
+        "module_name": "HostNetworkingService",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hostnetworkingservice:get-hnsnetwork",
+      "action": "OBSERVE",
+      "resource": "SERVICE",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.865926,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 9,
+        "frequency_score": 0.395628,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.956,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-HnsNetwork",
+        "module_name": "HostNetworkingService",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hostnetworkingservice:get-hnspolicylist",
+      "action": "OBSERVE",
+      "resource": "SERVICE",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.865926,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 9,
+        "frequency_score": 0.395628,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.956,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-HnsPolicyList",
+        "module_name": "HostNetworkingService",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:hyper-v:get-vmintegrationservice",
+      "action": "OBSERVE",
+      "resource": "SERVICE",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.865926,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 9,
+        "frequency_score": 0.395628,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.956,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-VMIntegrationService",
+        "module_name": "Hyper-V",
+        "runtime_version": "7.6.6"
+      }
+    },
+    {
+      "capability_id": "ps:netsecurity:get-netfirewallservicefilter",
+      "action": "OBSERVE",
+      "resource": "SERVICE",
+      "authority": "AUTO_SAFE",
+      "side_effect": "NONE",
+      "score": 0.865926,
+      "decision": "PROMOTE_NOW",
+      "metrics": {
+        "frequency_count": 9,
+        "frequency_score": 0.395628,
+        "safety_score": 1.0,
+        "authority_score": 1.0,
+        "native_ease": 0.956,
+        "dependency_penalty": 0.0,
+        "parameter_count": 0
+      },
+      "source": {
+        "command_name": "Get-NetFirewallServiceFilter",
+        "module_name": "NetSecurity",
+        "runtime_version": "7.6.6"
+      }
+    }
+  ]
+}

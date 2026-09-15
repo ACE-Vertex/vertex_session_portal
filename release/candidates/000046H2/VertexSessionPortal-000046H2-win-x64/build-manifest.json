@@ -1,0 +1,12 @@
+{
+  "artifact": "Vertex Session Portal.exe",
+  "product": "Vertex Session Portal",
+  "build_kind": "current-portable-five-window",
+  "source_package_version": "0.1.0",
+  "source_root": "G:\\Vertex_Project\\Development\\vertex_session_portal",
+  "five_window_source_verified": true,
+  "default_window_count": 3,
+  "max_window_count": 5,
+  "exe_sha256": "07b043bf9b0a0ac14a82fac0b612b7b7ed13cde727d706d74e41a45278ab51f1",
+  "built_at_unix": 1788980518
+}

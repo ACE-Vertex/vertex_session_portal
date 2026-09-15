@@ -1,0 +1,11 @@
+G:\Vertex_Project\Development\vertex_session_portal\release\_bundle_build\000087V5H2\workstation-target\release\deps\zeroize-b98151e99b0f3741.d: C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\lib.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\x86.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\barrier.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\stack.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\../README.md
+
+G:\Vertex_Project\Development\vertex_session_portal\release\_bundle_build\000087V5H2\workstation-target\release\deps\libzeroize-b98151e99b0f3741.rlib: C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\lib.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\x86.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\barrier.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\stack.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\../README.md
+
+G:\Vertex_Project\Development\vertex_session_portal\release\_bundle_build\000087V5H2\workstation-target\release\deps\libzeroize-b98151e99b0f3741.rmeta: C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\lib.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\x86.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\barrier.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\stack.rs C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\../README.md
+
+C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\lib.rs:
+C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\x86.rs:
+C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\barrier.rs:
+C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\stack.rs:
+C:\Users\acefr\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zeroize-1.9.0\src\../README.md:

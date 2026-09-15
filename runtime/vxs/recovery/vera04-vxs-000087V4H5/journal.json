@@ -1,0 +1,14 @@
+{
+  "artifact_id": "vertex-session-portal-vera04-vxs-production-wiring-e2e-000087V4H5",
+  "normalized_owner_sha256": "fd8e1523a374ebbfabe030e64839d99d84749d593327e901a399c78b1627b6ab",
+  "normalized_preload_sha256": "b6c6446f53c3179191e615d4521b073e1a64b35083813cbf0f4ff51d6cbb3f1f",
+  "original_owner_sha256": "fd8e1523a374ebbfabe030e64839d99d84749d593327e901a399c78b1627b6ab",
+  "original_preload_sha256": "b6c6446f53c3179191e615d4521b073e1a64b35083813cbf0f4ff51d6cbb3f1f",
+  "owner_sha256": "fd8e1523a374ebbfabe030e64839d99d84749d593327e901a399c78b1627b6ab",
+  "preload_sha256": "b6c6446f53c3179191e615d4521b073e1a64b35083813cbf0f4ff51d6cbb3f1f",
+  "prior_residue_owner_removed": false,
+  "prior_residue_preload_removed": false,
+  "schema": "vertex-vxs/vera-wiring-recovery-journal-1",
+  "state": "ROLLED_BACK_TO_NORMALIZED_BASELINE",
+  "updated_at_unix_ms": 1789444674042
+}

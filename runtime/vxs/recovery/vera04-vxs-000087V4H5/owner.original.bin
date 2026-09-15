@@ -1,0 +1,47 @@
+import { ipcMain } from 'electron'
+import type {
+  VertexShellCommandRequest,
+  VertexShellSetCwdRequest,
+  VertexShellStreamEvent
+} from '../../shared/vertex-shell-contracts'
+import { VertexShellService } from '../shell/vertex-shell-service'
+
+export function registerVertexShellIpc(
+  service: VertexShellService
+): void {
+  ipcMain.removeHandler('vertex-shell:state')
+  ipcMain.removeHandler('vertex-shell:execute')
+  ipcMain.removeHandler('vertex-shell:stop')
+  ipcMain.removeHandler('vertex-shell:set-cwd')
+
+  ipcMain.handle(
+    'vertex-shell:state',
+    () => service.state()
+  )
+
+  ipcMain.handle(
+    'vertex-shell:set-cwd',
+    (_event, request: VertexShellSetCwdRequest) =>
+      service.setCwd(request)
+  )
+
+  ipcMain.handle(
+    'vertex-shell:stop',
+    () => service.stop()
+  )
+
+  ipcMain.handle(
+    'vertex-shell:execute',
+    async (event, request: VertexShellCommandRequest) => {
+      const sender = event.sender
+      return service.execute(
+        request,
+        (streamEvent: VertexShellStreamEvent) => {
+          if (!sender.isDestroyed()) {
+            sender.send('vertex-shell:output', streamEvent)
+          }
+        }
+      )
+    }
+  )
+}

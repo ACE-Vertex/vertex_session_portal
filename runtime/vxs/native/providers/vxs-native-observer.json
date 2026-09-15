@@ -1,0 +1,43 @@
+{
+  "schema": "vertex-vxs/native-provider-binding-1",
+  "provider_id": "vxs-native-observer",
+  "state": "CONNECTED_TEST",
+  "binary": {
+    "path": "G:\\Vertex_Project\\Development\\vertex_session_portal\\runtime\\vxs\\native\\bin\\vxs-native-observer.exe",
+    "sha256": "352d6e5c14082ea82bf903ad63b69626ca463c31088302fb7c8ad69cfe985afb"
+  },
+  "source": {
+    "path": "G:\\Vertex_Project\\Development\\vertex_session_portal\\runtime\\vxs\\predation\\native-organs\\vxs-native-observer\\src\\main.rs",
+    "sha256": "889026e91a5a570f1fd7a3e692b82f139991d4b12daaeb3132af3c0554157dfd",
+    "organ_manifest": "G:\\Vertex_Project\\Development\\vertex_session_portal\\runtime\\vxs\\predation\\native-organs\\vxs-native-observer\\organ.json",
+    "organ_manifest_sha256": "7cb4d8568e3a03d6d56d7cdfb8ee5dfd44d51fac3abdf79b39683de0b4475ce4"
+  },
+  "authority": {
+    "default": "AUTO_SAFE",
+    "allowed": [
+      "AUTO_SAFE"
+    ],
+    "human_apply_required_for_mutation": true
+  },
+  "side_effect_policy": "NONE_ONLY",
+  "capabilities": {
+    "system": [
+      "observe"
+    ],
+    "filesystem": [
+      "exists",
+      "metadata",
+      "list"
+    ]
+  },
+  "routing": {
+    "priority": "NATIVE_FIRST",
+    "fallback": "POWERSHELL",
+    "fallback_status": "DECLARED_NOT_WIRED"
+  },
+  "transport": {
+    "current": "native-process-json",
+    "target": "vxn",
+    "vxn_binding_status": "PENDING_CONTRACT"
+  }
+}
